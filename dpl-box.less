@@ -1,0 +1,59 @@
+/**
+* @file dpl-box.less
+* @brief
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-19
+*/
+
+/* variable */
+@borderColor: #f0f0f0;
+@borderWidth: 2px;
+@headerHeight: 28px;
+@headerColor: #f0f0f0;
+@contentPadding: 8px;
+
+.dpl-box{
+	border: @borderWidth solid @borderColor;
+	.dpl-t{
+		background-color: @headerColor;
+		height: @headerHeight;
+		padding: 0 2px 0 14px;
+		h3{
+			line-height: @headerHeight;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+	.dpl-d{
+		border-top: @borderWidth solid @borderColor;
+		padding: @contentPadding;
+		.dpl-detail{
+			padding: @contentPadding;
+		}
+		.dpl-line{
+			border-bottom: 1px solid @borderColor;
+		}
+	}
+}
+.dpl-box-gray{
+	background: #fafafa;
+	.dpl-d{
+		border-width:0 0 1px 0;
+	}
+}
+.dpl-box-s{
+	.dpl-t{
+		padding:2px 8px;
+	}
+	.dpl-d{
+		padding:0;
+	}
+}
+.dpl-box-no-border{
+	border:none;
+	.dpl-d{
+		border:none;
+	}
+}
+

@@ -1,0 +1,20 @@
+@DefaultFontColor: #444;
+
+.linear-graident(@colorStart, @colorEnd){
+    background-color: (@colorEnd + @colorStart) / 2;
+    background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -ms-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@colorStart), to(@colorEnd));
+    background-image: -webkit-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -o-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: linear-gradient(top, @colorStart, @colorEnd);
+}
+
+.clearFloat(){
+	&:after{
+		clear: both;
+		content: " ";
+		display: block;
+		height: 0;
+	}
+}

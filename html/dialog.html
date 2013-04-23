@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="gbk"/>
+        <title>阿里巴巴</title>
+        <meta name="description" content="阿里巴巴批发大市场"/>
+        <meta name="keywords" content="阿里巴巴,采购批发,1688,行业门户,网上贸易,b2b,电子商务"/>
+        <link rel="stylesheet" rev="stylesheet" href="http://style.china.alibaba.com/fdevlib/css/fdev-v4/core/fdev-float.css" />
+		<link rel="stylesheet" rev="stylesheet" href="../dpl.css" />
+  		<link rel="stylesheet" rev="stylesheet" href="../dpl-dialog.css" />
+  		<link rel="stylesheet" rev="stylesheet" href="../dpl-btn.css" />
+        <base target="_blank"></base>
+    </head>
+    <body>		
+		<div style="height: 300px;">
+			<div class="dpl-dialog" style="width: 240px; margin-top: 8px; display: block;">				
+				<div class="dpl-t">
+					<strong class="dpl-title">弹出层标题</strong>
+					<a href="javascript:;" target="_self" class="dpl-close"></a>
+				</div>
+				<div class="dpl-d">
+					<div class="dpl-m">
+						coding here …
+					</div>
+					<div class="dpl-b">
+						coding here …
+					</div>
+				</div>			
+			</div>
+			<button type="button" class="dpl-btn" id="btn-show-dialog" style="margin-top: 8px;">show dialog</button>
+			
+			<div id="dialog" class="dpl-dialog" style="width: 240px;">				
+				<div class="dpl-t">
+					<strong class="dpl-title">弹出层标题</strong>
+					<a href="javascript:;" target="_self" class="dpl-close"></a>
+				</div>
+				<div class="dpl-d">
+					<div class="dpl-m">
+						coding here …
+					</div>
+					<div class="dpl-b">
+						<a href="javascript:;" class="dpl-lnk">我要提建议</a>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div style="height: 400px;">
+			<!-- 高宽用class自定义 -->
+			<div class="dpl-dialog dpl-dialog-l" style="width: 500px; display: block; margin-top: 8px;">				
+				<div class="dpl-t">
+					<strong class="dpl-title">弹出层标题</strong>
+					<a href="javascript:;" target="_self" class="dpl-close"></a>
+				</div>
+				<div class="dpl-d">
+					<div class="dpl-m">
+						coding here …
+					</div>
+					<div class="dpl-b">
+						coding here …
+					</div>
+				</div>			
+			</div>
+			<button type="button" class="dpl-btn" id="btn-show-dialog-l" style="margin-top: 8px;">show dialog L</button>
+			<!-- 高宽用class自定义 -->
+			<div id="dialog-l" class="dpl-dialog dpl-dialog-l" style="width: 500px;">				
+				<div class="dpl-t">
+					<strong class="dpl-title">弹出层标题</strong>
+					<a href="javascript:;" target="_self" class="dpl-close"></a>
+				</div>
+				<div class="dpl-d">
+					<div class="dpl-m">
+						coding here …
+					</div>
+					<div class="dpl-b">
+						<button class="dpl-btn" style="margin-right: 12px;">按钮名称</button><button class="dpl-btn-action">按钮名称</button>
+					</div>
+				</div>			
+			</div>					
+		</div>
+		<div style="height: 400px;">
+			<!-- 简易dialog -->			
+			<div class="dpl-dialog dpl-dialog-simple" style="display:block; margin: 8px;">
+				<div class="dpl-d">
+					<div class="dpl-m">
+						<i class="dpl-ico-success"></i><span>已添加为感兴趣活动</span>
+					</div>
+				</div>
+			</div>
+			<div class="dpl-dialog dpl-dialog-simple" style="display:block; margin: 8px;">
+				<div class="dpl-d">
+					<div class="dpl-m">
+						<i class="dpl-ico-success"></i><span>已添加为感兴趣活动</span>
+					</div>
+					<div class="dpl-b">
+						<button class="dpl-btn-action dpl-btn-s">按钮</button><button class="dpl-btn dpl-btn-s" style="margin-left: 8px;">按钮</button>
+					</div>
+				</div>
+			</div>
+			<button id="d-d-d" class="dpl-btn" type="button">show dialog simple</button>
+			<div id="d-d-s" class="dpl-dialog dpl-dialog-simple">
+				<div class="dpl-d">
+					<div class="dpl-m">
+						<i class="dpl-ico-success"></i><span>已添加为感兴趣活动</span>
+					</div>
+				</div>
+			</div>				
+		</div>
+		<script type="text/javascript" src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/core/fdev-min.js"></script>
+        <script type="text/javascript">        	
+			(function($, D){
+				$(D).ready(function(){
+					
+					/* dialog 详细参考 fdev4 浮层组件 */
+					$.use('ui-core,ui-draggable,ui-dialog', function(){
+											
+	                    var dialog = $('#dialog');
+	                    $('#btn-show-dialog').click(function(){
+	                        $(dialog).bind('dialogbefore', function(){
+	                            //$.log('custom before');
+	                        }).dialog({
+	                            modalCss: {
+	                                backgroundColor: '#fff'
+	                            },
+	                            draggable: {
+	                                handle: 'div.dpl-t'
+	                            },
+	                            fadeOut: 200,
+	                            shim: true,
+	                            center: true
+	                        });
+	                    });
+
+						var dialogL = $('#dialog-l');
+	                    $('#btn-show-dialog-l').click(function(){
+	                        $(dialogL).bind('dialogbefore', function(){
+	                            //$.log('custom before');
+	                        }).dialog({
+	                            modalCss: {
+	                                backgroundColor: '#fff'
+	                            },
+	                            draggable: {
+	                                handle: 'div.dpl-t'
+	                            },
+	                            fadeOut: 200,
+	                            shim: true,
+	                            center: true
+	                        });
+	                    });
+
+						$('button#d-d-d').click(function(ev){
+	                    	$('div#d-d-s').dialog({
+	                            fadeIn: 200,
+	                            fadeOut: 200,
+	                            timeout: 1000,
+	                            modal: false,
+	                            //shim: true,
+	                            center: true
+	                        });
+	                    });
+						
+	                    
+	                    $('a.dpl-close').click(function(){
+	                        $(this).closest('div.dpl-dialog').dialog('close');
+	                    });                    
+	                    
+	                    
+	                });	   	       
+					
+				});
+			})(jQuery, document);			
+        </script>
+		
+    </body>
+</html>
+
+		</div>

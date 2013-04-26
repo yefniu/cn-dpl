@@ -11,9 +11,6 @@
   background-color: #fafafa;
   color: #444444;
 }
-.dpl-path .dpl-lnk:hover {
-  text-decoration: none;
-}
 .dpl-path .dpl-l,
 .dpl-path .dpl-c,
 .dpl-path .dpl-r {
@@ -27,6 +24,9 @@
 }
 .dpl-path .dpl-r {
   float: right;
+}
+.dpl-path .dpl-lnk:hover {
+  text-decoration: none;
 }
 .dpl-path .dpl-c * {
   float: left;
@@ -45,13 +45,13 @@
   height: 18px;
   color: #444444;
 }
-.dpl-path-simple .dpl-lnk:hover {
-  text-decoration: none;
-}
 .dpl-path-simple .dpl-c {
   float: left;
   display: inline;
   padding: 0 12px;
+}
+.dpl-path-simple .dpl-lnk:hover {
+  text-decoration: none;
 }
 .dpl-path-simple .dpl-c * {
   float: left;

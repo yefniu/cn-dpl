@@ -1,0 +1,49 @@
+/* process */
+
+@import url(dpl-variable.less);
+
+@fontSize: #444;
+@defaultBgColor: #e5e6e8;
+@currentBgColor: #6f8ec0;
+@currentFontSize: #fff;
+@finishBgColor: #cbdef6;
+
+.dpl-process {
+	height:30px;
+	color:@fontSize;
+	.dpl-finish,.dpl-current,.dpl-wait {
+		float:left;
+		display:inline;
+		width:188px;
+		padding:6px 14px;
+		height:18px;
+		background-color:@defaultBgColor;
+		line-height:1.5;
+	}
+	.dpl-current {
+		border-top:solid 1px @currentBgColor;
+		padding:5px 14px 6px;
+		background-color:#7f9fd1;
+		color:@currentFontSize;
+	}
+	.dpl-finish {
+		background-color:@finishBgColor;
+	}
+	.dpl-c-w,.dpl-f-c,.dpl-w-w,.dpl-f-f {
+		float:left;
+		display:inline;
+		width:16px;
+		height:30px;
+		overflow:hidden;
+		background-position:0 -290px;
+	}
+	.dpl-f-c {
+		background-position:-20px -290px;
+	}
+	.dpl-w-w {
+		background-position:-40px -290px;
+	}
+	.dpl-f-f {
+		background-position:-60px -290px;
+	}
+}

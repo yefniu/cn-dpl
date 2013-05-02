@@ -1,33 +1,33 @@
-/* process */
+/**
+* @file dpl-process.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-30
+*/
 
 @import url(dpl-variable.less);
 
-@fontSize: #444;
-@defaultBgColor: #e5e6e8;
-@currentBgColor: #6f8ec0;
-@currentFontSize: #fff;
-@finishBgColor: #cbdef6;
-
 .dpl-process {
 	height:30px;
-	color:@fontSize;
+	color:@processFontColor;
 	.dpl-finish,.dpl-current,.dpl-wait {
 		float:left;
 		display:inline;
 		width:188px;
 		padding:6px 14px;
 		height:18px;
-		background-color:@defaultBgColor;
+		background-color:@processDefaultBgColor;
 		line-height:1.5;
 	}
 	.dpl-current {
-		border-top:solid 1px @currentBgColor;
+		border-top:solid 1px @porcessCurrentBgColor;
 		padding:5px 14px 6px;
 		background-color:#7f9fd1;
-		color:@currentFontSize;
+		color:@processCurrentFontColor;
 	}
 	.dpl-finish {
-		background-color:@finishBgColor;
+		background-color:@processFinishBgColor;
 	}
 	.dpl-c-w,.dpl-f-c,.dpl-w-w,.dpl-f-f {
 		float:left;

@@ -5,6 +5,20 @@
 * @version 1.0.0
 * @date 2013-04-22
 */
+/**
+* @file dpl-variable.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-28
+*/
+/* btn */
+/* tab */
+/* process */
+/* text */
+/* tip */
+/* title */
+/* common */
 .dpl-text {
   border: solid 1px #a0a0a0;
   height: 18px;

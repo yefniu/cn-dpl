@@ -5,6 +5,20 @@
 * @version 1.0.0
 * @date 2013-04-23
 */
+/**
+* @file dpl-variable.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-28
+*/
+/* btn */
+/* tab */
+/* process */
+/* text */
+/* tip */
+/* title */
+/* common */
 .dpl-tip {
   border: solid 1px #e7d3ac;
   background-color: #fffbdd;

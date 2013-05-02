@@ -5,6 +5,20 @@
 * @version 1.0.0
 * @date 2013-04-21
 */
+/**
+* @file dpl-variable.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-28
+*/
+/* btn */
+/* tab */
+/* process */
+/* text */
+/* tip */
+/* title */
+/* common */
 .dpl-btn,
 .dpl-btn-action,
 .dpl-btn-important,
@@ -99,7 +113,7 @@
 .dpl-btn-important {
   border: solid 1px #e89f0e;
   border-bottom-color: #e89f0e;
-  color: #fca000;
+  color: #ffffff;
   font-weight: bold;
   background-color: #f7a008;
   background-image: -moz-linear-gradient(top, #fcb10a, #f18e06);
@@ -110,7 +124,7 @@
   background-image: linear-gradient(top, #fcb10a, #f18e06);
 }
 .dpl-btn-important:hover {
-  color: #fca000;
+  color: #ffffff;
   text-decoration: none;
   background-color: #ec8a04;
   background-image: -moz-linear-gradient(top, #f29b06, #e57902);

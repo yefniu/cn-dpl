@@ -8,34 +8,21 @@
 
 @import url(dpl-variable.less);
 
-@fontColor: #444;
-@borderColor: #999;
-@borderWidth: 8px;
-@headerHeight: 28px;
-@headerBgColor: #f0f0f0;
-@contentBgColor: #fff;
-@contentBorderWidth: 2px;
-@contentBorderTopWidth: 0px;
-@contentBorderColor: #f0f0f0;
-
-@SimplateContentBorderWidth: 1px;
-@SimplateContentBorderColor: 1px;
-
 .dpl-dialog {
 	float:left;
 	display:none;
-	border:@borderWidth solid @borderColor;
-	border:@borderWidth solid rgba(0,0,0,0.4);
+	border:@dialogBorderWidth solid @dialogBorderColor;
+	border:@dialogBorderWidth solid rgba(0,0,0,0.4);
 	.dpl-t{
-		height: @headerHeight;
+		height: @dialogHeaderHeight;
 		padding:2px 8px 2px 16px;
-		background-color: @headerBgColor;
+		background-color: @dialogHeaderBgColor;
 		cursor:move;
 	}
 	.dpl-title{
 		float:left;
 		display:inline;
-		color: @fontColor;
+		color: @dialogFontColor;
 		font-size:14px;
 		line-height:2;
 		font-weight:bold;
@@ -55,11 +42,11 @@
 		}
 	}
 	.dpl-d{
-		background-color: @contentBgColor;
-		border:@contentBorderWidth solid @contentBorderColor;
-		border-top-width: @contentBorderTopWidth;
+		background-color: @dialogContentBgColor;
+		border:@dialogContentBorderWidth solid @dialogContentBorderColor;
+		border-top-width: @dialogContentBorderTopWidth;
 		padding:12px 8px 7px;
-		color: @fontColor;
+		color: @dialogFontColor;
 		.dpl-ico-serious,.dpl-ico-success,.dpl-ico-general,.dpl-ico-doubt{
 			display:inline-block;
 			width:16px;
@@ -103,8 +90,8 @@
 	border:solid 4px #e5e5e5;
 	border:solid 4px rgba(0,0,0,0.1);
 	.dpl-d {
-		background-color: @contentBgColor;
-		border:SimplateContentBorderWidth solid @SimplateContentBorderColor;
+		background-color: @dialogContentBgColor;
+		border:dialogSimplateContentBorderWidth solid @dialogSimplateContentBorderColor;
 		padding:8px 8px 4px;
 		text-align:center;
 		white-space:nowrap;

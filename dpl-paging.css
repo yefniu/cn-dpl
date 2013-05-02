@@ -1,4 +1,27 @@
-/* paging */
+/**
+* @file dpl-paging.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-02
+*/
+/**
+* @file dpl-variable.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-28
+*/
+/* box */
+/* btn */
+/* dialog */
+/* path */
+/* process */
+/* tab */
+/* text */
+/* tip */
+/* title */
+/* common */
 .dpl-paging {
   height: 22px;
   text-align: left;

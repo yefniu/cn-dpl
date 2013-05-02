@@ -5,34 +5,28 @@
 * @version 1.0.0
 * @date 2013-04-19
 */
-
-/* variable */
-@borderColor: #f0f0f0;
-@borderWidth: 2px;
-@headerHeight: 28px;
-@headerColor: #f0f0f0;
-@contentPadding: 8px;
+@import url(dpl-variable.less);
 
 .dpl-box{
-	border: @borderWidth solid @borderColor;
+	border: @boxBorderWidth solid @boxBorderColor;
 	.dpl-t{
-		background-color: @headerColor;
-		height: @headerHeight;
+		background-color: @boxHeaderColor;
+		height: @boxHeaderHeight;
 		padding: 0 2px 0 14px;
 		h3{
-			line-height: @headerHeight;
+			line-height: @boxHeaderHeight;
 			font-size: 14px;
 			font-weight: bold;
 		}
 	}
 	.dpl-d{
-		border-top: @borderWidth solid @borderColor;
-		padding: @contentPadding;
+		border-top: @boxBorderWidth solid @boxBorderColor;
+		padding: @boxContentPadding;
 		.dpl-detail{
-			padding: @contentPadding;
+			padding: @boxContentPadding;
 		}
 		.dpl-line{
-			border-bottom: 1px solid @borderColor;
+			border-bottom: 1px solid @boxBorderColor;
 		}
 	}
 }

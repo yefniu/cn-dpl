@@ -8,26 +8,19 @@
 
 @import url(dpl-variable.less);
 
-@fontColor: #444;
-@height: 28px;
-@borderColor: #c8c8c8;
-@backBgColor: #f0f0f0;
-
-@simpleHeight: 18px;
-
 .dpl-path {
-	height: @height;
-	border:1px solid @borderColor;
+	height: @processHeight;
+	border:1px solid @processBorderColor;
 	background-color:#fafafa;
-	color:@fontColor;
+	color:@processFontColor;
 	.dpl-l,.dpl-c,.dpl-r {
 		float:left;
 		display:inline;
 		padding:5px 11px;
 	}
 	.dpl-l {
-		background-color:@backBgColor;
-		border-right:1px solid @borderColor;
+		background-color:@processBackBgColor;
+		border-right:1px solid @processBorderColor;
 	}
 	.dpl-r {
 		float:right;
@@ -36,8 +29,8 @@
 }
 /* path style 2 */
 .dpl-path-simple {
-	height:@simpleHeight;
-	color:@fontColor;
+	height:@processSimpleHeight;
+	color:@processFontColor;
 	.dpl-c{
 		float:left;
 		display:inline;

@@ -11,6 +11,7 @@
 .dpl-btn,
 .dpl-btn-action,
 .dpl-btn-important,
+.dpl-btn-hint,
 .dpl-btn-disabled{
 	display: inline-block;
 	border: 1px solid @btnBorderColor;
@@ -87,6 +88,21 @@
 		.linear-graident(@btnImportantActiveGraidentStart, @btnImportantActiveGraidentEnd);
 	}
 }
+.dpl-btn-hint {
+	border: solid 1px @btnHintBorderColor;
+	border-bottom-color: @btnHintBorderBottomColor;
+	color: @btnHintFontColor;
+	font-weight: bold;
+	.linear-graident(@btnHintGraidentStart, @btnHintGraidentEnd);
+	&:hover{
+		color: @btnHintFontColor;
+		text-decoration: none;
+		.linear-graident(@btnHintHoverGraidentStart, @btnHintHoverGraidentEnd);
+	}
+	&:active{
+		.linear-graident(@btnHintActiveGraidentStart, @btnHintActiveGraidentEnd);
+	}
+}
 .dpl-btn-disabled,
 .dpl-btn-disabled:hover,
 .dpl-btn-disabled:active {
@@ -122,6 +138,7 @@
 a.dpl-btn,
 a.dpl-btn-action,
 a.dpl-btn-important,
+a.dpl-btn-hint,
 a.dpl-btn-disabled {
 	padding: 3px 13px;
 	height: 18px;

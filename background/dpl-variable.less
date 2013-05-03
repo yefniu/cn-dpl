@@ -1,0 +1,148 @@
+/**
+* @file dpl-variable.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-04-28
+*/
+
+ /* box */
+@boxBorderColor: #f0f0f0;
+@boxBorderWidth: 2px;
+@boxHeaderHeight: 28px;
+@boxHeaderColor: #f0f0f0;
+@boxContentPadding: 8px;
+
+ /* btn */
+@btnFontColor: #444;
+@btnBorderColor: #b3b3b3;
+@btnBorderBottomColor: #9a9a9a;
+@btnGraidentStart: #fcfcfc;
+@btnGraidentEnd: #e4e4e4;
+@btnHoverGraidentStart: #e6e6e6;
+@btnHoverGraidentEnd: #cfcfcf;
+@btnActiveGraidentStart: #cecece;
+@btnActiveGraidentEnd: #dcdcdc;
+
+@btnActionBorderColor: #729ce0;
+@btnActionBorderBottomColor: #6688c0;
+@btnActionFontColor: #fff;
+@btnActionGraidentStart: #7ba8f0;
+@btnActionGraidentEnd: #6692dc;
+@btnActionHoverGraidentStart: #7199db;
+@btnActionHoverGraidentEnd: #4e7bc6;
+@btnActionActiveGraidentStart: #688ac2;
+@btnActionActiveGraidentEnd: #7396cf;
+
+@btnImportantBorderColor: #e89f0e;
+@btnimportantBorderBottomColor: #e89f0e;
+@btnImportantFontColor: #fff;
+@btnImportantGraidentStart: #fcb10a;
+@btnImportantGraidentEnd: #f18e06;
+@btnImportantHoverGraidentStart: #f29b06;
+@btnImportantHoverGraidentEnd: #e57902;
+@btnImportantActiveGraidentStart: #e07f00;
+@btnImportantActiveGraidentEnd: #e48c02;
+
+@btnDisableBorderColor: #ddd;
+@btnDisableBorderBottomColor: #d3d3d3;
+@btnDisableFontColor: #c8c8c8;
+@btnDisableGraidentStart: #fcfcfc;
+@btnDisableGraidentEnd: #f7f7f7;
+
+@btnGroupSelectGraidentStart: #dfdfdf;
+@btnGroupSelectGraidentEnd: #c5c5c5;
+
+ /* dialog */
+@dialogFontColor: #444;
+@dialogBorderColor: #999;
+@dialogBorderWidth: 8px;
+@dialogHeaderHeight: 28px;
+@dialogHeaderBgColor: #f0f0f0;
+@dialogContentBgColor: #fff;
+@dialogContentBorderWidth: 2px;
+@dialogContentBorderTopWidth: 0px;
+@dialogContentBorderColor: #f0f0f0;
+
+@dialogSimplateContentBorderWidth: 1px;
+@dialogSimplateContentBorderColor: 1px;
+
+ /* path */
+@processFontColor: #444;
+@processHeight: 28px;
+@processBorderColor: #c8c8c8;
+@processBackBgColor: #f0f0f0;
+
+@processSimpleHeight: 18px;
+
+ /* process */
+@processFontColor: #444;
+@processDefaultBgColor: #e5e6e8;
+@porcessCurrentBgColor: #6f8ec0;
+@processCurrentFontColor: #fff;
+@processFinishBgColor: #cbdef6;
+
+ /* tab */
+@tabHeaderHeight: 24px;
+@tabHeaderBorderBottomColor: #a0a0a0;
+@tabHeaderBorderColor: #c8c8c8;
+@tabHeaderBgColor: #f2f2f2;
+@tabHeaderFontColor: #5a5a5a;
+@tabHeaderCurrentBorderWidth: 2px 1px 0;
+@tabHeaderCurrentBorderColor: #a0a0a0;
+
+@tabHeaderLargeHeight: 30px;
+
+@tabBoxBgColor:#f0f0f0;
+@tabBoxCurrentBgColor:#5f8acf;
+@tabBoxFontColor: #444;
+@tabBoxCurrentFontColor: #fff;
+
+ /* text */
+@textBorderColor: #a0a0a0;
+@textHeight: 18px;
+@textWidth: 140px;
+@textBgColor: #fff;
+@textFocusBorderColor: #6482b9;
+@textFocusBgColor: #fff;
+
+@textErrorBorderColor: #da7070;
+@textErrorBgColor: #fff5f5;
+
+ /* tip */
+@tipFontColor: #444;
+@tipBorderColor: #e7d3ac;
+@tipBgColor: #fffbdd;
+
+@tipBlockBorderColor: #b8c9d7;
+@tipBlockBgColor: #e8f1f7;
+
+@tipWarnFontColor: #e42a2a;
+
+ /* title */
+@titleHeight: 32px;
+@titleBgColor: #f3f5f7;
+
+@titleSimpleBgColor: #4d6da1;
+
+ /* common */
+@DefaultFontColor: #444;
+
+.linear-graident(@colorStart, @colorEnd){
+    background-color: (@colorEnd + @colorStart) / 2;
+    background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -ms-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@colorStart), to(@colorEnd));
+    background-image: -webkit-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -o-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: linear-gradient(top, @colorStart, @colorEnd);
+}
+
+.clearFloat(){ 
+	&:after{
+		clear: both;
+		content: " ";
+		display: block;
+		height: 0;
+	}
+}

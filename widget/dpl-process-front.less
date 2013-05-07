@@ -1,0 +1,159 @@
+/**
+* @file dpl-process.less
+* @brief
+* @author terence.wangt@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-07
+*/
+
+
+.dpl-process .dpl-node,
+.dpl-process .dpl-bar,
+.dpl-process .dpl-far{
+    background:@processSkinUrl;
+}
+
+.dpl-process-orange .dpl-node,
+.dpl-process-orange .dpl-bar,
+.dpl-process-orange .dpl-far{
+    background:@processOrangeSkinUrl
+}
+
+
+.dpl-process {
+    color: #888;
+
+
+    ul{
+        display:block;
+        height:20px;
+        padding:25px;
+        margin:0;
+        list-style-type:none;
+    }
+
+    .dpl-first-current,
+    .dpl-current,
+    .dpl-last-current{
+        color: #444;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .dpl-node,
+    .dpl-bar,
+    .dpl-far
+    {
+        height:20px;
+        clear:none !important;
+    }
+
+    .dpl-node{
+        float:left;
+        display:block;
+        width:20px;
+        position:relative;  
+    }
+
+    .dpl-finish{
+        background-position:-71px -120px;
+    }
+
+    .dpl-wait{
+        background-position:-71px 0px;
+    }
+
+    .dpl-current{
+        background-position:-71px -60px;
+    }
+
+    .dpl-first-finish{  
+        background-position:1px -120px;
+    }
+
+    .dpl-first-wait{
+        background-position:1px 0px;
+    }
+
+    .dpl-first-current{
+        background-position:1px -60px;
+    }
+
+    .dpl-last-finish{
+        background-position:-139px -60px;
+    }
+
+    .dpl-last-wait{
+        background-position:-139px 0px;
+    }
+
+    .dpl-last-current{
+        background-position:-139px -60px;
+    }
+
+    .step-one-wait{
+        background-position:-123px -120px;
+    }
+
+    .step-one-current{
+        background-position:-161px -120px;
+    }
+
+    .step-one-finish{
+        background-position:-161px -120px;
+    }
+
+    .dpl-bar{
+        float:left;
+        display:block;
+        width:120px;
+    }
+
+    .dpl-bar-finish{
+        background-repeat:repeat-x;
+        background-position:0px -176px;
+    }
+
+    .dpl-bar-wait{
+        background-repeat:repeat-x;
+        background-position:0px -236px;
+    }
+
+    .dpl-bar-current{
+        background-repeat:repeat-x;
+        background-position:0px -176px;
+    }
+
+    .dpl-far{
+       display:none;
+    }
+
+    .dpl-bar-current .dpl-far{
+        float:right;
+        display:block;
+        width:50%;
+        background-position:0px -236px;
+        background-repeat:repeat-x;
+    }
+
+    .dpl-process-label{
+        display:block;
+        height:15px;
+        width:130px;
+        position:absolute;
+        top:-23px;
+        left:-55px;
+        white-space:nowrap;
+        text-align:center;
+    }
+
+    .four-steps .dpl-bar{
+        width:163px;
+    }
+
+    .five-steps .dpl-bar{
+        width:117px;
+    }
+
+}
+

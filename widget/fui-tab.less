@@ -1,0 +1,156 @@
+/**
+* @file fui-tab.css
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0 
+* @date 2013-04-19
+*/
+
+.fui-tab{
+	.fui-t{
+		position: relative;
+		display: block;
+		height: @tabHeaderHeight;
+		border-bottom: 1px solid @tabHeaderBorderBottomColor;
+	}
+	.fui-tab-ul{
+		position: absolute;
+		top: 0;
+		height: @tabHeaderHeight + 1;
+		overflow: hidden;
+	}
+	.fui-tab-t{
+		float: left;
+		display: inline;
+		border: 1px solid @tabHeaderBorderColor;
+		border-bottom-width: 0;
+		margin: 1px 4px 0 0;
+		a{
+			&:link,&:visited,&:hover{
+				float:left;
+				display: inline;
+				height: @tabHeaderHeight - 4;
+				line-height: @tabHeaderHeight - 4;
+				padding: 0 13px 1px;
+				margin-top: 1px;
+				background-color: @tabHeaderBgColor;
+				color: @tabHeaderFontColor;
+				text-decoration: none;
+			}
+		}
+	}
+	.fui-tab-current{
+		border: 1px solid @tabHeaderCurrentBorderColor;
+		border-width: @tabHeaderCurrentBorderWidth;
+		margin-top: 0;
+		height: @tabHeaderHeight -1;
+		a{
+			&:link,&:visited,&hover{
+				padding: 3px 13px 2px;
+				margin-top: 0;
+				background-color: #FFF;
+				color: #444;
+				font-weight: bold;
+			}
+		}
+	}
+	
+	.fui-d{
+		overflow: hidden;
+	}
+}
+
+.fui-tab-l{
+	.fui-t{
+		height: @tabHeaderLargeHeight;
+	}
+	.fui-tab-ul{
+		height: @tabHeaderLargeHeight + 1;
+		.fui-tab-t{
+			a{
+				&:link,&:visited,&:hover{
+					height: @tabHeaderLargeHeight - 5;
+					line-height: @tabHeaderLargeHeight - 5;
+				}
+			}
+		}
+	}
+	.fui-tab-t{
+		a{
+			&:link,&:visited,&:hover{
+				height:@tabHeaderLargeHeight - 5;
+				padding:0 13px 2px;
+				font-size:14px;
+			}
+		}
+	}
+	.fui-tab-current {
+		height:@tabHeaderLargeHeight -1;
+		a{
+			&:link,&:visited,&:hover{
+				padding:1px 13px 3px;
+			}
+		}
+	}
+}
+.fui-tab-gray{
+	.fui-tab-current {
+		a{
+			&:link,&:visited,&:hover{
+				background-color:#f8f8f8;
+			}
+		}
+	}
+	.fui-d{
+		background-color:#f8f8f8;
+	}
+}
+.fui-tab-box {
+	background-color: @tabBoxBgColor;
+	.fui-t {
+		position:static;
+		height:28px;
+		padding:2px 4px 0 16px;
+		border-width:0;
+		h3 {
+			float:left;
+			display:inline;
+			line-height:2;
+			font-size:14px;
+			font-weight:bold;
+		}
+	}
+	.fui-tab-ul {
+		position:static;
+		float:right;
+		display:inline;
+		height:28px;
+	}
+	.fui-tab-t {
+		margin:0 0 0 8px;
+		border-width:0;
+		a{
+			&:link,&:visited,&:hover{
+				background-color:@tabBoxBgColor;
+				margin-top:0;
+				padding:5px 12px;
+				color:@tabBoxFontColor;
+			}
+		}
+	}
+	.fui-tab-current {
+		border-width:0;
+		height:tabBoxHeaderHeight;
+		a{
+			&:link,&:visited,&:hover{
+				padding:5px 12px;
+				background-color:@tabBoxCurrentBgColor;
+				color:@tabBoxCurrentFontColor;
+			}
+		}
+	}
+	.fui-d {
+		background-color:#fff;
+	}
+}
+

@@ -66,10 +66,11 @@
   color: #ff7300;
 }
 /**
- * @overview:ͼ��
- *
- * @author: terence.wangt
- * @date: 2013-05-03
+* @file fui-icon.less
+* @brief
+* @author terence.wangt@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-07
 */
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -736,6 +737,7 @@ a.fui-btn-notxt {
   height: 28px;
   padding: 2px 8px 2px 16px;
   background-color: #f0f0f0;
+  border: 0px solid #f0f0f0;
   cursor: move;
 }
 .fui-dialog .fui-title {
@@ -792,6 +794,7 @@ a.fui-btn-notxt {
 }
 .fui-dialog .fui-b {
   padding: 5px 4px 0;
+  margin: 0px;
   border-top: solid 1px #f0f0f0;
   text-align: right;
 }
@@ -1266,7 +1269,7 @@ a.fui-btn-notxt {
 .fui-text:focus {
   border-color: #6482b9;
   background-color: #ffffff;
-  box-shadow: inset 0 1px 1px #e6e6e6,0 0 2px #a3c1f2;
+  box-shadow: 0 0 1px #a3c1f2;
 }
 .fui-text-s {
   padding: 1px 2px;
@@ -1276,7 +1279,7 @@ a.fui-btn-notxt {
 .fui-text-error {
   border-color: #da7070;
   background-color: #fff5f5;
-  box-shadow: inset 0 1px 1px #e5dcdc;
+  box-shadow: 0px 0px 1px #e5dcdc;
 }
 .fui-text-calendar {
   width: 112px;
@@ -1305,6 +1308,9 @@ a.fui-btn-notxt {
 }
 .fui-tip .fui-ico-bubble {
   background-position: -80px -65px;
+}
+.fui-tip .fui-tip-row-close {
+  margin-right: 0px;
 }
 .fui-tip .fui-tip-row-close:link,
 .fui-tip .fui-tip-row-close:visited {
@@ -1408,7 +1414,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-b-l {
   position: absolute;
   top: -7px;
-  left: 22px;
+  left: 24px;
   width: 14px;
   height: 7px;
   overflow: hidden;
@@ -1425,8 +1431,10 @@ a.fui-btn-notxt {
   border-width: 0 1px;
   margin: 0 auto;
 }
-.fui-tip-simple .fui-t-r {
-  left: 194px;
+.fui-tip-simple .fui-t-r,
+.fui-tip-simple .fui-b-r {
+  left: auto;
+  right: 24px;
 }
 .fui-tip-simple .fui-t-l .fui-a-1,
 .fui-tip-simple .fui-t-r .fui-a-1 {
@@ -1460,7 +1468,8 @@ a.fui-btn-notxt {
 }
 .fui-tip-simple .fui-b-r,
 .fui-tip-simple .fui-b-l {
-  top: 68px;
+  top: auto;
+  bottom: -7px;
 }
 .fui-tip-simple .fui-b-r .fui-a-7,
 .fui-tip-simple .fui-b-l .fui-a-7 {
@@ -1492,15 +1501,12 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-b-l .fui-a-1 {
   width: 12px;
 }
-.fui-tip-simple .fui-b-r {
-  left: 194px;
-}
 .fui-tip-simple .fui-r-t,
 .fui-tip-simple .fui-r-b,
 .fui-tip-simple .fui-l-b,
 .fui-tip-simple .fui-l-t {
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 230px;
   width: 7px;
   height: 14px;
@@ -1518,6 +1524,11 @@ a.fui-btn-notxt {
   border: solid 1px #e7d3ac;
   border-width: 1px 0;
   margin: 0;
+}
+.fui-tip-simple .fui-r-t,
+.fui-tip-simple .fui-r-b {
+  left: auto;
+  right: -7px;
 }
 .fui-tip-simple .fui-r-t .fui-a-1,
 .fui-tip-simple .fui-r-b .fui-a-1 {
@@ -1597,7 +1608,8 @@ a.fui-btn-notxt {
 }
 .fui-tip-simple .fui-r-b,
 .fui-tip-simple .fui-l-b {
-  top: 48px;
+  top: auto;
+  bottom: 8px;
 }
 .fui-tip-inline {
   display: inline-block;
@@ -1614,7 +1626,7 @@ a.fui-btn-notxt {
   width: 12px;
   height: 18px;
   overflow: hidden;
-  margin: 0 8px 0 0;
+  margin: 0 6px 0 0;
   background-position: -40px -112px;
   vertical-align: middle;
 }
@@ -1623,6 +1635,26 @@ a.fui-btn-notxt {
 }
 .fui-tip-inline .fui-ico-general {
   background-position: -40px -172px;
+}
+.fui-tip-light {
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+}
+.fui-tip-light .fui-t-l i,
+.fui-tip-light .fui-t-r i,
+.fui-tip-light .fui-b-r i,
+.fui-tip-light .fui-b-l i {
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  border-width: 0 1px;
+}
+.fui-tip-light .fui-r-t i,
+.fui-tip-light .fui-r-b i,
+.fui-tip-light .fui-l-b i,
+.fui-tip-light .fui-l-t i {
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  border-width: 1px 0;
 }
 .fui-tip-inline-warning {
   color: #e42a2a;

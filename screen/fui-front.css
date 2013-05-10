@@ -66,10 +66,11 @@
   color: #ff7300;
 }
 /**
- * @overview:ͼ��
- *
- * @author: terence.wangt
- * @date: 2013-05-03
+* @file fui-icon.less
+* @brief
+* @author terence.wangt@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-07
 */
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -729,13 +730,14 @@ a.fui-btn-notxt {
 .fui-dialog {
   float: left;
   display: none;
-  border: 8px solid #999999;
-  border: 8px solid rgba(0, 0, 0, 0.4);
+  border: 8px solid #b2b2b2;
+  border: 8px solid rgba(0, 0, 0, 0.3);
 }
 .fui-dialog .fui-t {
   height: 28px;
-  padding: 2px 8px 2px 16px;
-  background-color: #f0f0f0;
+  padding: 2px 11px 2px 14px;
+  background-color: #f5faff;
+  border: 1px solid #d6e1ec;
   cursor: move;
 }
 .fui-dialog .fui-title {
@@ -761,9 +763,9 @@ a.fui-btn-notxt {
 }
 .fui-dialog .fui-d {
   background-color: #ffffff;
-  border: 2px solid #f0f0f0;
+  border: 1px solid #d6e1ec;
   border-top-width: 0px;
-  padding: 12px 8px 7px;
+  padding: 0;
   color: #444444;
 }
 .fui-dialog .fui-d .fui-ico-serious,
@@ -788,21 +790,22 @@ a.fui-btn-notxt {
   background-position: -60px -234px;
 }
 .fui-dialog .fui-m {
-  padding: 0 4px 8px;
+  padding: 12px;
 }
 .fui-dialog .fui-b {
-  padding: 5px 4px 0;
+  padding: 8px 4px;
+  margin: 0 10px;
   border-top: solid 1px #f0f0f0;
   text-align: right;
 }
 .fui-dialog-l .fui-d {
-  padding: 24px 8px 10px;
+  padding: 0px;
 }
 .fui-dialog-l .fui-m {
-  padding: 0 16px 24px;
+  padding: 24px;
 }
 .fui-dialog-l .fui-b {
-  padding: 12px 16px 0;
+  padding: 8px 14px;
 }
 .fui-dialog-simple {
   border: solid 4px #e5e5e5;
@@ -1340,7 +1343,7 @@ a.fui-btn-notxt {
 .fui-text:focus {
   border-color: #6482b9;
   background-color: #ffffff;
-  box-shadow: inset 0 1px 1px #e6e6e6,0 0 2px #a3c1f2;
+  box-shadow: 0 0 1px #acddf6;
 }
 .fui-text-s {
   padding: 1px 2px;
@@ -1348,9 +1351,9 @@ a.fui-btn-notxt {
   background-position: 96px -69px;
 }
 .fui-text-error {
-  border-color: #da7070;
-  background-color: #fff5f5;
-  box-shadow: inset 0 1px 1px #e5dcdc;
+  border-color: #ffbb48;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 1px #ffdca3;
 }
 .fui-text-calendar {
   width: 112px;
@@ -1364,9 +1367,9 @@ a.fui-btn-notxt {
 * @date 2013-04-23
 */
 .fui-tip {
-  border: solid 1px #e7d3ac;
-  background-color: #fffbdd;
-  padding: 6px 8px 6px 12px;
+  border: solid 1px #f4d79a;
+  background-color: #ffffe5;
+  padding: 8px 12px;
   color: #444444;
 }
 .fui-tip .fui-ico-speaker,
@@ -1379,6 +1382,9 @@ a.fui-btn-notxt {
 }
 .fui-tip .fui-ico-bubble {
   background-position: -80px -65px;
+}
+.fui-tip .fui-tip-row-close {
+  margin-right: -4px;
 }
 .fui-tip .fui-tip-row-close:link,
 .fui-tip .fui-tip-row-close:visited {
@@ -1410,8 +1416,8 @@ a.fui-btn-notxt {
   margin-top: 4px;
 }
 .fui-tip-block {
-  background-color: #e8f1f7;
-  border: solid 1px #b8c9d7;
+  background-color: #e8f5fd;
+  border: solid 1px #c0d8e7;
   padding: 18px 40px;
 }
 .fui-tip-block .fui-d {
@@ -1447,20 +1453,20 @@ a.fui-btn-notxt {
   background-position: -60px -164px;
 }
 .fui-tip-block-warning {
-  border: solid 1px #e7d3ac;
-  background-color: #fffbdd;
+  border: solid 1px #f4d79a;
+  background-color: #ffffe5;
 }
 .fui-tip-simple {
   position: absolute;
   padding: 0;
-  background-color: #fffbdd;
-  border: solid 1px #e7d3ac;
+  background-color: #ffffe5;
+  border: solid 1px #f4d79a;
   height: 68px;
   width: 230px;
   overflow: visible;
 }
 .fui-tip-simple .fui-d {
-  padding: 6px;
+  padding: 8px 12px;
 }
 .fui-tip-simple .fui-d .fui-ico-bulb {
   display: inline-block;
@@ -1482,7 +1488,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-b-l {
   position: absolute;
   top: -7px;
-  left: 22px;
+  left: 24px;
   width: 14px;
   height: 7px;
   overflow: hidden;
@@ -1494,18 +1500,20 @@ a.fui-btn-notxt {
   display: block;
   height: 1px;
   overflow: hidden;
-  background-color: #fffbdd;
-  border: solid 1px #e7d3ac;
+  background-color: #ffffe5;
+  border: solid 1px #f4d79a;
   border-width: 0 1px;
   margin: 0 auto;
 }
-.fui-tip-simple .fui-t-r {
-  left: 194px;
+.fui-tip-simple .fui-t-r,
+.fui-tip-simple .fui-b-r {
+  left: auto;
+  right: 24px;
 }
 .fui-tip-simple .fui-t-l .fui-a-1,
 .fui-tip-simple .fui-t-r .fui-a-1 {
   width: 2px;
-  background-color: #e7d3ac;
+  background-color: #f4d79a;
   border-width: 0;
 }
 .fui-tip-simple .fui-t-l .fui-a-2,
@@ -1534,12 +1542,13 @@ a.fui-btn-notxt {
 }
 .fui-tip-simple .fui-b-r,
 .fui-tip-simple .fui-b-l {
-  top: 68px;
+  top: auto;
+  bottom: -7px;
 }
 .fui-tip-simple .fui-b-r .fui-a-7,
 .fui-tip-simple .fui-b-l .fui-a-7 {
   width: 2px;
-  background-color: #e7d3ac;
+  background-color: #f4d79a;
   border-width: 0;
 }
 .fui-tip-simple .fui-b-r .fui-a-6,
@@ -1566,15 +1575,12 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-b-l .fui-a-1 {
   width: 12px;
 }
-.fui-tip-simple .fui-b-r {
-  left: 194px;
-}
 .fui-tip-simple .fui-r-t,
 .fui-tip-simple .fui-r-b,
 .fui-tip-simple .fui-l-b,
 .fui-tip-simple .fui-l-t {
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 230px;
   width: 7px;
   height: 14px;
@@ -1588,10 +1594,15 @@ a.fui-btn-notxt {
   display: inline;
   width: 1px;
   overflow: hidden;
-  background-color: #fffbdd;
-  border: solid 1px #e7d3ac;
+  background-color: #ffffe5;
+  border: solid 1px #f4d79a;
   border-width: 1px 0;
   margin: 0;
+}
+.fui-tip-simple .fui-r-t,
+.fui-tip-simple .fui-r-b {
+  left: auto;
+  right: -7px;
 }
 .fui-tip-simple .fui-r-t .fui-a-1,
 .fui-tip-simple .fui-r-b .fui-a-1 {
@@ -1625,7 +1636,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-r-t .fui-a-7,
 .fui-tip-simple .fui-r-b .fui-a-7 {
   height: 2px;
-  background-color: #e7d3ac;
+  background-color: #f4d79a;
   border-width: 0;
   margin-top: 6px;
 }
@@ -1665,13 +1676,14 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-l-b .fui-a-1,
 .fui-tip-simple .fui-l-t .fui-a-1 {
   height: 2px;
-  background-color: #e7d3ac;
+  background-color: #f4d79a;
   border-width: 0;
   margin-top: 6px;
 }
 .fui-tip-simple .fui-r-b,
 .fui-tip-simple .fui-l-b {
-  top: 48px;
+  top: auto;
+  bottom: 8px;
 }
 .fui-tip-inline {
   display: inline-block;
@@ -1688,7 +1700,7 @@ a.fui-btn-notxt {
   width: 12px;
   height: 18px;
   overflow: hidden;
-  margin: 0 8px 0 0;
+  margin: 0 6px 0 0;
   background-position: -40px -112px;
   vertical-align: middle;
 }

@@ -1,5 +1,5 @@
 /**
-* @file fui-front.less
+* @file fui-back.less
 * @brief
 * @author terence, terence@alibaba-inc.com
 * @version 1.0.0
@@ -8,9 +8,9 @@
 /**
 * @file dpl-variable.less
 * @brief 
-* @author terence, terence.wangt@alibaba-inc.com
+* @author yefniu, yefei.niuyf@alibaba-inc.com
 * @version 1.0.0
-* @date 2013-05-03
+* @date 2013-04-28
 */
 /* box */
 /* btn */
@@ -476,69 +476,69 @@ a.alitalk-off {
   background-image: linear-gradient(top, #cecece, #dcdcdc);
 }
 .fui-btn-action {
-  border: solid 1px #2590ea;
-  border-bottom-color: #2590ea;
+  border: solid 1px #729ce0;
+  border-bottom-color: #6688c0;
   color: #ffffff;
-  background-color: #3196e6;
-  background-image: -moz-linear-gradient(top, #3099eb, #3192e1);
-  background-image: -ms-linear-gradient(top, #3099eb, #3192e1);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3099eb), to(#3192e1));
-  background-image: -webkit-linear-gradient(top, #3099eb, #3192e1);
-  background-image: -o-linear-gradient(top, #3099eb, #3192e1);
-  background-image: linear-gradient(top, #3099eb, #3192e1);
+  background-color: #719de6;
+  background-image: -moz-linear-gradient(top, #7ba8f0, #6692dc);
+  background-image: -ms-linear-gradient(top, #7ba8f0, #6692dc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7ba8f0), to(#6692dc));
+  background-image: -webkit-linear-gradient(top, #7ba8f0, #6692dc);
+  background-image: -o-linear-gradient(top, #7ba8f0, #6692dc);
+  background-image: linear-gradient(top, #7ba8f0, #6692dc);
 }
 .fui-btn-action:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #2a8fdd;
-  background-image: -moz-linear-gradient(top, #2b91e1, #288cd9);
-  background-image: -ms-linear-gradient(top, #2b91e1, #288cd9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2b91e1), to(#288cd9));
-  background-image: -webkit-linear-gradient(top, #2b91e1, #288cd9);
-  background-image: -o-linear-gradient(top, #2b91e1, #288cd9);
-  background-image: linear-gradient(top, #2b91e1, #288cd9);
+  background-color: #608ad1;
+  background-image: -moz-linear-gradient(top, #7199db, #4e7bc6);
+  background-image: -ms-linear-gradient(top, #7199db, #4e7bc6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7199db), to(#4e7bc6));
+  background-image: -webkit-linear-gradient(top, #7199db, #4e7bc6);
+  background-image: -o-linear-gradient(top, #7199db, #4e7bc6);
+  background-image: linear-gradient(top, #7199db, #4e7bc6);
 }
 .fui-btn-action:active {
-  background-color: #2a8fdd;
-  background-image: -moz-linear-gradient(top, #288cd9, #2b91e1);
-  background-image: -ms-linear-gradient(top, #288cd9, #2b91e1);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#288cd9), to(#2b91e1));
-  background-image: -webkit-linear-gradient(top, #288cd9, #2b91e1);
-  background-image: -o-linear-gradient(top, #288cd9, #2b91e1);
-  background-image: linear-gradient(top, #288cd9, #2b91e1);
+  background-color: #6e90c9;
+  background-image: -moz-linear-gradient(top, #688ac2, #7396cf);
+  background-image: -ms-linear-gradient(top, #688ac2, #7396cf);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#688ac2), to(#7396cf));
+  background-image: -webkit-linear-gradient(top, #688ac2, #7396cf);
+  background-image: -o-linear-gradient(top, #688ac2, #7396cf);
+  background-image: linear-gradient(top, #688ac2, #7396cf);
 }
 .fui-btn-important {
-  border: solid 1px #ff5400;
-  border-bottom-color: #ff5400;
+  border: solid 1px #e89f0e;
+  border-bottom-color: #e89f0e;
   color: #ffffff;
   font-weight: bold;
-  background-color: #ff7100;
-  background-image: -moz-linear-gradient(top, #ff7900, #ff6900);
-  background-image: -ms-linear-gradient(top, #ff7900, #ff6900);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff7900), to(#ff6900));
-  background-image: -webkit-linear-gradient(top, #ff7900, #ff6900);
-  background-image: -o-linear-gradient(top, #ff7900, #ff6900);
-  background-image: linear-gradient(top, #ff7900, #ff6900);
+  background-color: #f7a008;
+  background-image: -moz-linear-gradient(top, #fcb10a, #f18e06);
+  background-image: -ms-linear-gradient(top, #fcb10a, #f18e06);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcb10a), to(#f18e06));
+  background-image: -webkit-linear-gradient(top, #fcb10a, #f18e06);
+  background-image: -o-linear-gradient(top, #fcb10a, #f18e06);
+  background-image: linear-gradient(top, #fcb10a, #f18e06);
 }
 .fui-btn-important:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #f76305;
-  background-image: -moz-linear-gradient(top, #fd6901, #f15d08);
-  background-image: -ms-linear-gradient(top, #fd6901, #f15d08);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fd6901), to(#f15d08));
-  background-image: -webkit-linear-gradient(top, #fd6901, #f15d08);
-  background-image: -o-linear-gradient(top, #fd6901, #f15d08);
-  background-image: linear-gradient(top, #fd6901, #f15d08);
+  background-color: #ec8a04;
+  background-image: -moz-linear-gradient(top, #f29b06, #e57902);
+  background-image: -ms-linear-gradient(top, #f29b06, #e57902);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f29b06), to(#e57902));
+  background-image: -webkit-linear-gradient(top, #f29b06, #e57902);
+  background-image: -o-linear-gradient(top, #f29b06, #e57902);
+  background-image: linear-gradient(top, #f29b06, #e57902);
 }
 .fui-btn-important:active {
-  background-color: #f76205;
-  background-image: -moz-linear-gradient(top, #f15c08, #fd6801);
-  background-image: -ms-linear-gradient(top, #f15c08, #fd6801);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f15c08), to(#fd6801));
-  background-image: -webkit-linear-gradient(top, #f15c08, #fd6801);
-  background-image: -o-linear-gradient(top, #f15c08, #fd6801);
-  background-image: linear-gradient(top, #f15c08, #fd6801);
+  background-color: #e28601;
+  background-image: -moz-linear-gradient(top, #e07f00, #e48c02);
+  background-image: -ms-linear-gradient(top, #e07f00, #e48c02);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e07f00), to(#e48c02));
+  background-image: -webkit-linear-gradient(top, #e07f00, #e48c02);
+  background-image: -o-linear-gradient(top, #e07f00, #e48c02);
+  background-image: linear-gradient(top, #e07f00, #e48c02);
 }
 .fui-btn-hint {
   border: solid 1px #f7bf4f;
@@ -730,14 +730,14 @@ a.fui-btn-notxt {
 .fui-dialog {
   float: left;
   display: none;
-  border: 8px solid #b2b2b2;
-  border: 8px solid rgba(0, 0, 0, 0.3);
+  border: 8px solid #999999;
+  border: 8px solid rgba(0, 0, 0, 0.4);
 }
 .fui-dialog .fui-t {
   height: 28px;
-  padding: 2px 11px 2px 14px;
-  background-color: #f5faff;
-  border: 1px solid #d6e1ec;
+  padding: 2px 8px 2px 16px;
+  background-color: #f0f0f0;
+  border: 0px solid #f0f0f0;
   cursor: move;
 }
 .fui-dialog .fui-title {
@@ -763,9 +763,9 @@ a.fui-btn-notxt {
 }
 .fui-dialog .fui-d {
   background-color: #ffffff;
-  border: 1px solid #d6e1ec;
+  border: 2px solid #f0f0f0;
   border-top-width: 0px;
-  padding: 0;
+  padding: 12px 8px 7px;
   color: #444444;
 }
 .fui-dialog .fui-d .fui-ico-serious,
@@ -790,22 +790,22 @@ a.fui-btn-notxt {
   background-position: -60px -234px;
 }
 .fui-dialog .fui-m {
-  padding: 12px;
+  padding: 0 4px 8px;
 }
 .fui-dialog .fui-b {
-  padding: 8px 4px;
-  margin: 0 10px;
+  padding: 5px 4px 0;
+  margin: 0px;
   border-top: solid 1px #f0f0f0;
   text-align: right;
 }
 .fui-dialog-l .fui-d {
-  padding: 0px;
+  padding: 24px 8px 10px;
 }
 .fui-dialog-l .fui-m {
-  padding: 24px;
+  padding: 0 16px 24px;
 }
 .fui-dialog-l .fui-b {
-  padding: 8px 14px;
+  padding: 12px 16px 0;
 }
 .fui-dialog-simple {
   border: solid 4px #e5e5e5;
@@ -1058,128 +1058,54 @@ a.fui-btn-notxt {
 }
 /**
 * @file fui-process.less
-* @brief
-* @author terence.wangt@alibaba-inc.com
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
 * @version 1.0.0
-* @date 2013-05-07
+* @date 2013-04-30
 */
-.fui-process .fui-node,
-.fui-process .fui-bar,
-.fui-process .fui-far {
-  background: url(http://img.china.alibaba.com/cms/upload/2012/508/684/486805_532208266.gif) no-repeat;
-}
-.fui-process-orange .fui-node,
-.fui-process-orange .fui-bar,
-.fui-process-orange .fui-far {
-  background: url(http://img.china.alibaba.com/cms/upload/2012/708/684/486807_532208266.gif) no-repeat;
-}
 .fui-process {
-  color: #888;
+  height: 30px;
+  color: #444444;
 }
-.fui-process ul {
-  display: block;
-  height: 20px;
-  padding: 25px;
-  margin: 0;
-  list-style-type: none;
-}
-.fui-process .fui-first-current,
+.fui-process .fui-finish,
 .fui-process .fui-current,
-.fui-process .fui-last-current {
-  color: #444;
-  font-size: 14px;
-  font-weight: 700;
-}
-.fui-process .fui-node,
-.fui-process .fui-bar,
-.fui-process .fui-far {
-  height: 20px;
-  clear: none !important;
-}
-.fui-process .fui-node {
-  float: left;
-  display: block;
-  width: 20px;
-  position: relative;
-}
-.fui-process .fui-finish {
-  background-position: -71px -120px;
-}
 .fui-process .fui-wait {
-  background-position: -71px 0px;
+  float: left;
+  display: inline;
+  width: 188px;
+  padding: 6px 14px;
+  height: 18px;
+  background-color: #e5e6e8;
+  line-height: 1.5;
 }
 .fui-process .fui-current {
-  background-position: -71px -60px;
+  border-top: solid 1px #6f8ec0;
+  padding: 5px 14px 6px;
+  background-color: #7f9fd1;
+  color: #ffffff;
 }
-.fui-process .fui-first-finish {
-  background-position: 1px -120px;
+.fui-process .fui-finish {
+  background-color: #cbdef6;
 }
-.fui-process .fui-first-wait {
-  background-position: 1px 0px;
-}
-.fui-process .fui-first-current {
-  background-position: 1px -60px;
-}
-.fui-process .fui-last-finish {
-  background-position: -139px -60px;
-}
-.fui-process .fui-last-wait {
-  background-position: -139px 0px;
-}
-.fui-process .fui-last-current {
-  background-position: -139px -60px;
-}
-.fui-process .step-one-wait {
-  background-position: -123px -120px;
-}
-.fui-process .step-one-current {
-  background-position: -161px -120px;
-}
-.fui-process .step-one-finish {
-  background-position: -161px -120px;
-}
-.fui-process .fui-bar {
+.fui-process .fui-c-w,
+.fui-process .fui-f-c,
+.fui-process .fui-w-w,
+.fui-process .fui-f-f {
   float: left;
-  display: block;
-  width: 120px;
+  display: inline;
+  width: 16px;
+  height: 30px;
+  overflow: hidden;
+  background-position: 0 -290px;
 }
-.fui-process .fui-bar-finish {
-  background-repeat: repeat-x;
-  background-position: 0px -176px;
+.fui-process .fui-f-c {
+  background-position: -20px -290px;
 }
-.fui-process .fui-bar-wait {
-  background-repeat: repeat-x;
-  background-position: 0px -236px;
+.fui-process .fui-w-w {
+  background-position: -40px -290px;
 }
-.fui-process .fui-bar-current {
-  background-repeat: repeat-x;
-  background-position: 0px -176px;
-}
-.fui-process .fui-far {
-  display: none;
-}
-.fui-process .fui-bar-current .fui-far {
-  float: right;
-  display: block;
-  width: 50%;
-  background-position: 0px -236px;
-  background-repeat: repeat-x;
-}
-.fui-process .fui-process-label {
-  display: block;
-  height: 15px;
-  width: 130px;
-  position: absolute;
-  top: -23px;
-  left: -55px;
-  white-space: nowrap;
-  text-align: center;
-}
-.fui-process .four-steps .fui-bar {
-  width: 163px;
-}
-.fui-process .five-steps .fui-bar {
-  width: 117px;
+.fui-process .fui-f-f {
+  background-position: -60px -290px;
 }
 /**
 * @file fui-tab.css
@@ -1343,7 +1269,7 @@ a.fui-btn-notxt {
 .fui-text:focus {
   border-color: #6482b9;
   background-color: #ffffff;
-  box-shadow: 0 0 1px #acddf6;
+  box-shadow: 0 0 1px #a3c1f2;
 }
 .fui-text-s {
   padding: 1px 2px;
@@ -1351,9 +1277,9 @@ a.fui-btn-notxt {
   background-position: 96px -69px;
 }
 .fui-text-error {
-  border-color: #ffbb48;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 1px #ffdca3;
+  border-color: #da7070;
+  background-color: #fff5f5;
+  box-shadow: 0px 0px 1px #e5dcdc;
 }
 .fui-text-calendar {
   width: 112px;
@@ -1367,9 +1293,9 @@ a.fui-btn-notxt {
 * @date 2013-04-23
 */
 .fui-tip {
-  border: solid 1px #f4d79a;
-  background-color: #ffffe5;
-  padding: 8px 12px;
+  border: solid 1px #e7d3ac;
+  background-color: #fffbdd;
+  padding: 6px 8px 6px 12px;
   color: #444444;
 }
 .fui-tip .fui-ico-speaker,
@@ -1384,7 +1310,7 @@ a.fui-btn-notxt {
   background-position: -80px -65px;
 }
 .fui-tip .fui-tip-row-close {
-  margin-right: -4px;
+  margin-right: 0px;
 }
 .fui-tip .fui-tip-row-close:link,
 .fui-tip .fui-tip-row-close:visited {
@@ -1416,8 +1342,8 @@ a.fui-btn-notxt {
   margin-top: 4px;
 }
 .fui-tip-block {
-  background-color: #e8f5fd;
-  border: solid 1px #c0d8e7;
+  background-color: #e8f1f7;
+  border: solid 1px #b8c9d7;
   padding: 18px 40px;
 }
 .fui-tip-block .fui-d {
@@ -1453,20 +1379,20 @@ a.fui-btn-notxt {
   background-position: -60px -164px;
 }
 .fui-tip-block-warning {
-  border: solid 1px #f4d79a;
-  background-color: #ffffe5;
+  border: solid 1px #e7d3ac;
+  background-color: #fffbdd;
 }
 .fui-tip-simple {
   position: absolute;
   padding: 0;
-  background-color: #ffffe5;
-  border: solid 1px #f4d79a;
+  background-color: #fffbdd;
+  border: solid 1px #e7d3ac;
   height: 68px;
   width: 230px;
   overflow: visible;
 }
 .fui-tip-simple .fui-d {
-  padding: 8px 12px;
+  padding: 6px;
 }
 .fui-tip-simple .fui-d .fui-ico-bulb {
   display: inline-block;
@@ -1500,8 +1426,8 @@ a.fui-btn-notxt {
   display: block;
   height: 1px;
   overflow: hidden;
-  background-color: #ffffe5;
-  border: solid 1px #f4d79a;
+  background-color: #fffbdd;
+  border: solid 1px #e7d3ac;
   border-width: 0 1px;
   margin: 0 auto;
 }
@@ -1513,7 +1439,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-t-l .fui-a-1,
 .fui-tip-simple .fui-t-r .fui-a-1 {
   width: 2px;
-  background-color: #f4d79a;
+  background-color: #e7d3ac;
   border-width: 0;
 }
 .fui-tip-simple .fui-t-l .fui-a-2,
@@ -1548,7 +1474,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-b-r .fui-a-7,
 .fui-tip-simple .fui-b-l .fui-a-7 {
   width: 2px;
-  background-color: #f4d79a;
+  background-color: #e7d3ac;
   border-width: 0;
 }
 .fui-tip-simple .fui-b-r .fui-a-6,
@@ -1594,8 +1520,8 @@ a.fui-btn-notxt {
   display: inline;
   width: 1px;
   overflow: hidden;
-  background-color: #ffffe5;
-  border: solid 1px #f4d79a;
+  background-color: #fffbdd;
+  border: solid 1px #e7d3ac;
   border-width: 1px 0;
   margin: 0;
 }
@@ -1636,7 +1562,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-r-t .fui-a-7,
 .fui-tip-simple .fui-r-b .fui-a-7 {
   height: 2px;
-  background-color: #f4d79a;
+  background-color: #e7d3ac;
   border-width: 0;
   margin-top: 6px;
 }
@@ -1676,7 +1602,7 @@ a.fui-btn-notxt {
 .fui-tip-simple .fui-l-b .fui-a-1,
 .fui-tip-simple .fui-l-t .fui-a-1 {
   height: 2px;
-  background-color: #f4d79a;
+  background-color: #e7d3ac;
   border-width: 0;
   margin-top: 6px;
 }

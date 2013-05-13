@@ -26,42 +26,19 @@
 .fui-dialog .fui-d .fui-ico-success,
 .fui-dialog .fui-d .fui-ico-general,
 .fui-tab-bar .fui-tab-t,
-.fui-dialog .fui-d .fui-ico-doubt{background: url("http://img.china.alibaba.com/cms/upload/search/common/20130513/sprite.png") no-repeat;}
-.fui-loading .fui-ico{background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w24.gif") no-repeat;}
-.fui-loading-part .fui-ico{background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w16.gif") no-repeat;}
-
-
-
+.fui-dialog .fui-d .fui-ico-doubt {
+  background: url("http://img.china.alibaba.com/cms/upload/search/common/20130513/sprite.png") no-repeat;
+}
+.fui-loading .fui-ico {
+  background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w24.gif") no-repeat;
+}
+.fui-loading-part .fui-ico {
+  background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w16.gif") no-repeat;
+}
 .fui-lnk:link,
-.fui-lnk:visited{color: #369;}
-.fui-lnk:hover{color: #ff7300;} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fui-lnk:visited {
+  color: #369;
+}
+.fui-lnk:hover {
+  color: #ff7300;
+}

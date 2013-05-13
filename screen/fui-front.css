@@ -851,7 +851,6 @@ a.fui-btn-notxt {
   display: inline-block;
 }
 .fui-paging .fui-page-list {
-  float: left;
   font-size: 14px;
 }
 .fui-paging .fui-page-list a:link,
@@ -959,7 +958,6 @@ a.fui-btn-notxt {
 .fui-paging .fui-paging-total,
 .fui-paging .fui-number,
 .fui-paging .fui-forward {
-  float: left;
   margin-left: 10px;
 }
 /**

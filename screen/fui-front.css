@@ -880,13 +880,13 @@ a.fui-btn-notxt {
   border-right: 0px;
 }
 .fui-paging .fui-page-list .fui-prev:link,
-.fui-paging .fui-page-list .fui-prevvisited {
-  width: 60px;
+.fui-paging .fui-page-list .fui-prev:visited {
+  width: 55px;
   margin-right: 10px;
   border-right: 1px solid #cccccc;
 }
 .fui-paging .fui-page-list .fui-prev:link .fui-txt,
-.fui-paging .fui-page-list .fui-prevvisited .fui-txt {
+.fui-paging .fui-page-list .fui-prev:visited .fui-txt {
   float: left;
   display: inline;
   height: 18px;
@@ -907,7 +907,7 @@ a.fui-btn-notxt {
 .fui-paging .fui-page-list .fui-next:link,
 .fui-paging .fui-page-list .fui-next:visited,
 .fui-paging .fui-page-list .fui-next:hover {
-  width: 60px;
+  width: 55px;
   font-weight: normal;
   border-right: 1px solid #cccccc;
   margin-right: 0;

@@ -7,7 +7,7 @@
 */
 
 .fui-paging {
-	height:22px;
+	.clearFloat();
 	text-align:left;
 	color:#444;
 	span{
@@ -18,68 +18,49 @@
 		display:inline-block
 	}
 	.fui-page-list{
+		float:left;
+		font-size:@pagingFontSize;
 		a{
 			&:link,&:visited{
-				width:20px;
-				height:18px;
-				padding:1px 0;
+				float:left;
+				width:@pagingNumWidth;
+				height:@pagingNumHeight;
+				line-height:@pagingNumHeight;
 				overflow:hidden;
-				border:solid 1px #dcdcdc;
-				margin-right:4px;
-				color:#444;
+				border:solid 1px @pagingBorderColor;
+				margin-right:@pagingNumMarginRight;
+				color:@pagingNumFontColor;
 				text-decoration:none;
 				text-align:center;
+				border-right:@pagingNumBorderRightWidth solid @pagingBorderColor;
 			}
 			&:hover{
-				border-color:#5f8acf;
-				color:#5f8acf;
-				font-weight:bold;
+				border-color:@pagingCurrentBorder;
+				color:@pagingNumHoverFontColor;
 			}
 		}
 		.fui-current{
 			&:link,&:visited,&:hover{
-				border:solid 1px #5f8acf;
-				background-color:#5f8acf;
+				border:solid 1px @pagingCurrentBorder;
+				background-color:@pagingCurrentBgColor;
 				font-weight:bold;
-				color:#fff;
+				color:@pagingCurrentFontColor;
+				border-right:@pagingCurrentBorderRightWidth;
 			}
 		}
 		.fui-omit{
-			margin-right:4px;
-			padding:2px 0;
+			float:left;
+			height:@pagingNumHeight;
+			margin-right:@pagingOmitMarginRight;
+			padding:@pagingOmitPadding;
+			border-left:@pagingOmitBorderWidth solid @pagingBorderColor;
+			border-right:@pagingOmitBorderRightWidth;
 		}
 		.fui-prev{
-			&:link,&visited{
-				.fui-ico{
-					float:left;
-					display:inline;
-					width:20px;
-					height:18px;
-					background-position:-60px -16px;
-					cursor:pointer;
-				}
-			}
-			&:hover{
-				.fui-ico{
-					background-position:-80px -16px;
-				}
-			}
-		}
-		.fui-prev-disabled{
-			&:link,&:visited,&:hover{
-				border-color:#dcdcdc;
-				cursor:default;
-				.fui-ico{
-					background-position:-40px -16px;
-					cursor:default;
-				}
-			}
-
-		}
-		.fui-next{
-			&:link,&:visited,&:hover{
-				width:60px;
-				font-weight:normal;
+			&:link,&:visited{
+				width:@pagingPreNextWidth;
+				margin-right:@pagingPreMarginRight;
+				border-right:1px solid @pagingBorderColor;
 				.fui-txt{
 					float:left;
 					display:inline;
@@ -88,29 +69,36 @@
 					cursor:pointer;
 				}
 			}
-			&:link,&:visited{
-				.fui-ico{
-					float:left;
-					display:inline;
-					width:8px;
-					height:10px;
-					margin-top:4px;
-					background-position:-66px -40px;
-					cursor:pointer;
+		}
+		.fui-prev-disabled{
+			&:link,&:visited,&:hover{
+				border-color:@pagingBorderColor;
+				.fui-txt{
+					color:#dcdcdc;
+					cursor:default;
 				}
 			}
-			&:hover{
-				background-position:-86px -40px;
+
+		}
+		.fui-next{
+			&:link,&:visited,&:hover{
+				width:@pagingPreNextWidth;
+				font-weight:normal;
+				border-right:1px solid @pagingBorderColor;
+				margin-right:0;
+				.fui-txt{
+					float:left;
+					display:inline;
+					height:18px;
+					margin:0 4px 0 6px;
+					cursor:pointer;
+				}
 			}
 		}
 		.fui-next-disabled{
 			&:link,&:visited,&:hover{
-				border-color:#dcdcdc;
-				cursor:default;
-				.fui-ico{
-					background-position:-46px -40px;
-					cursor:default;
-				}
+				border-color:@pagingBorderColor;
+				margin-right:0;
 				.fui-txt{
 					color:#dcdcdc;
 					cursor:default;
@@ -123,7 +111,6 @@
 		margin-right:0;
 	}
 	.fui-number{
-		margin-left:4px;
 		span{
 			margin:0 4px;
 			padding:2px 0;
@@ -134,34 +121,9 @@
 			width:32px;
 		}
 	}
-	.fui-forward{
-		margin-left:4px;
-	}
-}
-.fui-paging-align-right{
-	text-align: right;
-}
-.fui-paging-align-center{
-	text-align: center;
-}
-
-/* 解决inline-block换行问题 */	
-.fui-paging-r {
-	.fui-paging-list{
-		a:link,a:visited,a:hover,.fui-omit{
-			margin-right:0;
-		}
-		.fui-prev,.fui-next{
-			&:link,&:visited,&:hover{
-				*margin-right:4px;
-			}
-		}
-	}
-	.fui-number span{
-		margin:0px;
-	}
-	.fui-forward {
-		*margin-left:8px;
+	.fui-paging-total,.fui-number,.fui-forward{
+		float:left;
+		margin-left:@pagingOtherMarginLeft;
 	}
 }
 

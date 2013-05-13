@@ -1,9 +1,9 @@
 /**
 * @file fui-tab.css
 * @brief 
-* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @author terence.wangt@alibaba-inc.com
 * @version 1.0.0 
-* @date 2013-04-19
+* @date 2013-05-13
 */
 
 .fui-tab{
@@ -18,13 +18,17 @@
 		top: 0;
 		height: @tabHeaderHeight + 1;
 		overflow: hidden;
+		border-left: @tabHeaderBorderLeftWidth solid #d9d9d9;
 	}
 	.fui-tab-t{
 		float: left;
 		display: inline;
 		border: 1px solid @tabHeaderBorderColor;
 		border-bottom-width: 0;
-		margin: 1px 4px 0 0;
+		border-left-width: @tabHeaderLiLeftWidth;
+
+		margin: 0px 4px 0 0;
+		margin-right:@tabHeaderCurrentMarginRight;
 		a{
 			&:link,&:visited,&:hover{
 				float:left;
@@ -43,7 +47,7 @@
 		border: 1px solid @tabHeaderCurrentBorderColor;
 		border-width: @tabHeaderCurrentBorderWidth;
 		margin-top: 0;
-		height: @tabHeaderHeight -1;
+		height: @tabHeaderHeight - 1;
 		a{
 			&:link,&:visited,&hover{
 				padding: 3px 13px 2px;
@@ -62,10 +66,10 @@
 
 .fui-tab-l{
 	.fui-t{
-		height: @tabHeaderLargeHeight;
+		height: @tabHeaderLargeHeight - 1;
 	}
 	.fui-tab-ul{
-		height: @tabHeaderLargeHeight + 1;
+		height: @tabHeaderLargeHeight;
 		.fui-tab-t{
 			a{
 				&:link,&:visited,&:hover{
@@ -85,7 +89,7 @@
 		}
 	}
 	.fui-tab-current {
-		height:@tabHeaderLargeHeight -1;
+		height:@tabHeaderLargeHeight - 1;
 		a{
 			&:link,&:visited,&:hover{
 				padding:1px 13px 3px;

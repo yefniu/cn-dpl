@@ -961,32 +961,6 @@ a.fui-btn-notxt {
   float: left;
   margin-left: 10px;
 }
-.fui-paging-align-right {
-  text-align: right;
-}
-.fui-paging-align-center {
-  text-align: center;
-}
-/* 解决inline-block换行问题 */.fui-paging-r .fui-paging-list a:link,
-.fui-paging-r .fui-paging-list a:visited,
-.fui-paging-r .fui-paging-list a:hover,
-.fui-paging-r .fui-paging-list .fui-omit {
-  margin-right: 0;
-}
-.fui-paging-r .fui-paging-list .fui-prev:link,
-.fui-paging-r .fui-paging-list .fui-next:link,
-.fui-paging-r .fui-paging-list .fui-prev:visited,
-.fui-paging-r .fui-paging-list .fui-next:visited,
-.fui-paging-r .fui-paging-list .fui-prev:hover,
-.fui-paging-r .fui-paging-list .fui-next:hover {
-  *margin-right: 4px;
-}
-.fui-paging-r .fui-number span {
-  margin: 0px;
-}
-.fui-paging-r .fui-forward {
-  *margin-left: 8px;
-}
 /**
 * @file fui-path.less
 * @brief 

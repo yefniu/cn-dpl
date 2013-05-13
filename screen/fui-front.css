@@ -836,6 +836,12 @@ a.fui-btn-notxt {
   text-align: left;
   color: #444;
 }
+.fui-paging:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+}
 .fui-paging span {
   *padding-bottom: 2px;
 }
@@ -844,10 +850,12 @@ a.fui-btn-notxt {
   display: inline-block;
 }
 .fui-paging .fui-page-list {
+  float: left;
   font-size: 14px;
 }
 .fui-paging .fui-page-list a:link,
 .fui-paging .fui-page-list a:visited {
+  float: left;
   width: 27px;
   height: 28px;
   line-height: 28px;
@@ -873,6 +881,7 @@ a.fui-btn-notxt {
   border-right: 0px;
 }
 .fui-paging .fui-page-list .fui-omit {
+  float: left;
   height: 28px;
   margin-right: 0px;
   padding: 1px 9px;
@@ -949,6 +958,7 @@ a.fui-btn-notxt {
 .fui-paging .fui-paging-total,
 .fui-paging .fui-number,
 .fui-paging .fui-forward {
+  float: left;
   margin-left: 10px;
 }
 .fui-paging-align-right {

@@ -7,6 +7,7 @@
 */
 
 .fui-paging {
+	.clearFloat();
 	text-align:left;
 	color:#444;
 	span{
@@ -17,9 +18,11 @@
 		display:inline-block
 	}
 	.fui-page-list{
+		float:left;
 		font-size:@pagingFontSize;
 		a{
 			&:link,&:visited{
+				float:left;
 				width:@pagingNumWidth;
 				height:@pagingNumHeight;
 				line-height:@pagingNumHeight;
@@ -46,6 +49,7 @@
 			}
 		}
 		.fui-omit{
+			float:left;
 			height:@pagingNumHeight;
 			margin-right:@pagingOmitMarginRight;
 			padding:@pagingOmitPadding;
@@ -118,6 +122,7 @@
 		}
 	}
 	.fui-paging-total,.fui-number,.fui-forward{
+		float:left;
 		margin-left:@pagingOtherMarginLeft;
 	}
 }

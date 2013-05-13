@@ -1,0 +1,336 @@
+/**
+* @file fui-icon.less
+* @brief
+* @author terence.wangt@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-07
+*/
+.fui-ico-ww-online,
+.fui-ico-ww-phone,
+.fui-ico-ww-off,
+.fui-ico-ww-online-s,
+.fui-ico-ww-phone-s,
+.fui-ico-ww-off-s,
+a.alitalk,
+.fui-end {
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20120724/alitalk.gif) no-repeat 0 0;
+  display: inline-block;
+}
+.fui-ico-cxt39x16,
+.fui-ico-cxt16x16,
+.fui-ico-truePrice,
+.fui-ico-trueDes,
+.fui-ico-trueLocation,
+.fui-ico-payEnsure,
+.fui-ico-pay7,
+.fui-ico-payGuarantee,
+.fui-ico-goldSupplier,
+.fui-ico-alipay,
+.fui-ico-etc,
+.fui-ico-bank,
+.fui-ico-xjd,
+.fui-ico-video,
+.fui-ico-ping,
+.fui-ico-callme,
+.fui-ico-callmeSmall,
+.fui-ico-king,
+.fui-ico-price,
+.fui-ico-mixWholeSale,
+.fui-ico-tradeMedal,
+.fui-ico-processing,
+.fui-ico-brand,
+.fui-end {
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130513/icon.png) no-repeat 0 0;
+  display: inline-block;
+}
+.fui-ico-cxt16x16,
+.fui-ico-cxt16x16:link,
+.fui-ico-cxt16x16:hover,
+.fui-ico-cxt16x16:active,
+.fui-ico-cxt16x16:visited,
+.fui-ico-truePrice,
+.fui-ico-truePrice:link,
+.fui-ico-truePrice:hover,
+.fui-ico-truePrice:active,
+.fui-ico-truePrice:visited,
+.fui-ico-payEnsure,
+.fui-ico-payEnsure:link,
+.fui-ico-payEnsure:hover,
+.fui-ico-payEnsure:active,
+.fui-ico-payEnsure:visited,
+.fui-ico-pay7,
+.fui-ico-pay7:link,
+.fui-ico-pay7:hover,
+.fui-ico-pay7:active,
+.fui-ico-pay7:visited,
+.fui-ico-trueDes,
+.fui-ico-trueDes:link,
+.fui-ico-trueDes:hover,
+.fui-ico-trueDes:active,
+.fui-ico-trueDes:visited,
+.fui-ico-alipay,
+.fui-ico-alipay:link,
+.fui-ico-alipay:hover,
+.fui-ico-alipay:active,
+.fui-ico-alipay:visited,
+.fui-ico-etc,
+.fui-ico-etc:link,
+.fui-ico-etc:hover,
+.fui-ico-etc:active,
+.fui-ico-etc:visited,
+.fui-ico-trueLocation,
+.fui-ico-trueLocation:link,
+.fui-ico-trueLocation:hover,
+.fui-ico-trueLocation:active,
+.fui-ico-trueLocation:visited,
+.fui-ico-payGuarantee,
+.fui-ico-payGuarantee:link,
+.fui-ico-payGuarantee:hover,
+.fui-ico-payGuarantee:active,
+.fui-ico-payGuarantee:visited,
+.fui-ico-goldSupplier,
+.fui-ico-goldSupplier:link,
+.fui-ico-goldSupplier:hover,
+.fui-ico-goldSupplier:active,
+.fui-ico-goldSupplier:visited,
+.fui-ico-bank,
+.fui-ico-bank:link,
+.fui-ico-bank:hover,
+.fui-ico-bank:active,
+.fui-ico-bank:visited,
+.fui-ico-video,
+.fui-ico-video:link,
+.fui-ico-video:hover,
+.fui-ico-video:active,
+.fui-ico-video:visited,
+.fui-ico-ping,
+.fui-ico-ping:link,
+.fui-ico-ping:hover,
+.fui-ico-ping:active,
+.fui-ico-ping:visited,
+.fui-ico-callmeSmall,
+.fui-ico-callmeSmall:link,
+.fui-ico-callmeSmall:hover,
+.fui-ico-callmeSmall:active,
+.fui-ico-callmeSmall:visited,
+.fui-end {
+  color: #888;
+  text-decoration: none;
+}
+.fui-ico-ww-online,
+.fui-ico-ww-phone,
+.fui-ico-ww-off,
+.fui-ico-xjd,
+.fui-ico-callme,
+.fui-end {
+  width: 72px;
+  height: 18px;
+}
+.fui-ico-cxt16x16 {
+  height: 18px;
+  padding-left: 18px;
+  overflow: hidden;
+  line-height: 18px;
+  *line-height: 20px;
+  _line-height: 18px;
+  line-height: 19px\0;
+}
+.fui-ico-ww-online-s,
+.fui-ico-ww-phone-s,
+.fui-ico-ww-off-s,
+.fui-ico-callmeSmall,
+.fui-end {
+  width: 16px;
+  height: 18px;
+}
+.fui-ico-truePrice,
+.fui-ico-trueDes,
+.fui-ico-trueLocation,
+.fui-ico-payEnsure,
+.fui-ico-pay7,
+.fui-ico-payGuarantee,
+.fui-ico-goldSupplier,
+.fui-ico-alipay,
+.fui-ico-etc,
+.fui-ico-bank,
+.fui-ico-video,
+.fui-ico-ping,
+.fui-ico-price,
+.fui-end {
+  height: 18px;
+  padding-left: 20px;
+  overflow: hidden;
+  line-height: 19px;
+  *line-height: 21px;
+  _line-height: 19px;
+  line-height: 21px\0;
+}
+/* ���� ͼ�� */
+.fui-ico-king {
+  width: 45px;
+  height: 18px;
+  background-position: 0 -583px;
+}
+/* ���� */
+.fui-ico-ww-online {
+  background-position: 0 0;
+}
+.fui-ico-ww-online:hover {
+  background-position: 0 -20px;
+}
+.fui-ico-ww-phone {
+  background-position: 0px -40px;
+}
+.fui-ico-ww-phone:hover {
+  background-position: 0px -60px;
+}
+.fui-ico-ww-off {
+  background-position: 0 -80px;
+}
+.fui-ico-ww-online-s,
+a.alitalk-on {
+  background-position: 0 -100px;
+}
+.fui-ico-ww-phone-s,
+a.alitalk-mb {
+  background-position: 0 -120px;
+}
+.fui-ico-ww-off-s,
+a.alitalk-off {
+  background-position: 0 -140px;
+}
+/* 2013�°�����ͨ */
+.fui-ico-cxt39x16 {
+  background-position: 0 -151px;
+}
+.fui-ico-cxt16x16 {
+  background-position: 0 -119px;
+}
+.fui-ico-cxt16x16 em {
+  font-weight: 700;
+  color: #c00;
+}
+/* ��ʵ���� */
+.fui-ico-truePrice {
+  background-position: 0 2px;
+}
+/* ��ʵ����  */
+.fui-ico-trueDes {
+  background-position: 0 -258px;
+}
+/* ʵ����֤  */
+.fui-ico-trueLocation {
+  background-position: 0 -429px;
+}
+/* ����� */
+.fui-ico-payEnsure {
+  background-position: 0 -404px;
+}
+/* �����⸶ */
+.fui-ico-pay7 {
+  background-position: 0 -98px;
+}
+/* ���Ͻ� */
+.fui-ico-payGuarantee {
+  background-position: 0 -78px;
+}
+/* ���ƹ�Ӧ�� */
+.fui-ico-goldSupplier {
+  background-position: 0 -888px;
+  vertical-align: middle;
+}
+/* ֧���� */
+.fui-ico-alipay {
+  background-position: 0 -19px;
+}
+/* ����֧�� */
+.fui-ico-etc {
+  background-position: 0 -38px;
+}
+/* ���� */
+.fui-ico-bank {
+  background-position: 0 -456px;
+}
+/* ��ҵ��Ƶ */
+.fui-ico-video {
+  background-position: 0 -483px;
+}
+/* Ʒ����ҵ */
+.fui-ico-ping {
+  background-position: 0 -533px;
+}
+/* ���ѵ绰�����ְ�  */
+.fui-ico-callmeSmall {
+  display: none !important;
+  background-position: 0 -557px;
+}
+.fui-ico-callmeSmall:hover {
+  background-position: 0 -508px;
+}
+/* ���ѵ绰�����ְ�  */
+.fui-ico-callme {
+  display: none !important;
+  background-position: 0 -320px;
+}
+.fui-ico-callme:hover {
+  background-position: 0 -339px;
+}
+.callme-on {
+  display: inline-block !important;
+}
+/* ѯ�۵�*/
+.fui-ico-xjd {
+  background-position: 0 -360px;
+}
+.fui-ico-xjd:hover {
+  background-position: 0 -383px;
+}
+/* �۸���ʶ */
+.fui-ico-price {
+  background-position: 0 -629px;
+  padding-left: 12px;
+}
+/*������ʶ*/
+.fui-ico-mixWholeSale {
+  background-position: 0 -658px;
+  height: 18px;
+  vertical-align: middle;
+  width: 38px;
+}
+/*�ӹ���ʶ*/
+.fui-ico-processing {
+  background-position: 0 -812px;
+  height: 15px;
+  width: 45px;
+  vertical-align: text-bottom;
+}
+/*Ʒ���̳�*/
+.fui-ico-brand {
+  background-position: 0 -835px;
+  height: 16px;
+  width: 52px;
+  vertical-align: text-bottom;
+}
+/*����ѫ��*/
+.fui-ico-tradeMedal {
+  height: 18px;
+  background-position: 0 -681px;
+}
+.fui-ico-tradeMedal:hover {
+  text-decoration: none;
+}
+.fui-ico-tradeMedal-medalLevel1 {
+  width: 16px;
+}
+.fui-ico-tradeMedal-medalLevel2 {
+  width: 35px;
+}
+.fui-ico-tradeMedal-medalLevel3 {
+  width: 54px;
+}
+.fui-ico-tradeMedal-medalLevel4 {
+  width: 72px;
+}
+.fui-ico-tradeMedal-medalLevel5 {
+  width: 90px;
+}

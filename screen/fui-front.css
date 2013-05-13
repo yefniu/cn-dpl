@@ -48,8 +48,9 @@
 .fui-dialog .fui-d .fui-ico-serious,
 .fui-dialog .fui-d .fui-ico-success,
 .fui-dialog .fui-d .fui-ico-general,
+.fui-tab-bar .fui-tab-t,
 .fui-dialog .fui-d .fui-ico-doubt {
-  background: url("http://img.china.alibaba.com/cms/upload/2012/277/204/402772_1921578814.png") no-repeat;
+  background: url("http://img.china.alibaba.com/cms/upload/search/common/20130513/sprite.png") no-repeat;
 }
 .fui-loading .fui-ico {
   background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w24.gif") no-repeat;
@@ -106,7 +107,7 @@ a.alitalk,
 .fui-ico-processing,
 .fui-ico-brand,
 .fui-end {
-  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130504/icon.png) no-repeat 0 0;
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130513/icon.png) no-repeat 0 0;
   display: inline-block;
 }
 .fui-ico-cxt16x16,
@@ -1163,7 +1164,7 @@ a.fui-btn-notxt {
   position: relative;
   display: block;
   height: 24px;
-  border-bottom: 1px solid #a0a0a0;
+  border-bottom: 1px solid #cccccc;
 }
 .fui-tab .fui-tab-ul {
   position: absolute;
@@ -1247,6 +1248,31 @@ a.fui-btn-notxt {
 .fui-tab-gray .fui-d {
   background-color: #f8f8f8;
 }
+.fui-tab-pink .fui-tab-t {
+  border: 1px solid #D9B9AA;
+  border-bottom-width: 0;
+  border-left-width: 0px;
+}
+.fui-tab-pink .fui-tab-t a:link,
+.fui-tab-pink .fui-tab-t a:visited,
+.fui-tab-pink .fui-tab-t a:hover {
+  background-color: #FBF3EE;
+}
+.fui-tab-pink .fui-tab-current {
+  border: 1px solid #A04B23;
+}
+.fui-tab-pink .fui-tab-current a:link,
+.fui-tab-pink .fui-tab-current a:visited,
+.fui-tab-pink .fui-tab-current ahover {
+  background-color: #FFF;
+  color: #444;
+}
+.fui-tab-pink .fui-tab-ul {
+  border-left: 1px solid #d9b9aa;
+}
+.fui-tab-pink .fui-t {
+  border-bottom: 1px solid #A04B23;
+}
 .fui-tab-box {
   background-color: #f0f0f0;
 }
@@ -1294,6 +1320,54 @@ a.fui-btn-notxt {
 }
 .fui-tab-box .fui-d {
   background-color: #fff;
+}
+.fui-tab-bar .fui-t {
+  background-color: #f0f0f0;
+}
+.fui-tab-bar .fui-tab-t {
+  border: none;
+  margin-left: -1px;
+  background-position: right -206px;
+}
+.fui-tab-bar .fui-tab-t a:link,
+.fui-tab-bar .fui-tab-t a:visited,
+.fui-tab-bar .fui-tab-t a:hover {
+  font-size: 12px;
+  background-color: transparent;
+}
+.fui-tab-bar .fui-tab-t a:hover {
+  text-decoration: underline;
+}
+.fui-tab-bar .fui-tab-ul {
+  border-left: none;
+  overflow: visible;
+}
+.fui-tab-bar .fui-tab-current {
+  border: 1px solid #ccc;
+  border-top: 2px solid #666;
+  border-bottom-width: 0;
+  margin-top: -1px;
+  background-color: #fff;
+  background-position: -9999px -9999px;
+}
+.fui-bar-pink .fui-t {
+  background-color: #fbf3ee;
+  border-bottom: 1px solid #D9B9AA;
+}
+.fui-bar-pink .fui-tab-t {
+  background-position: right -258px;
+}
+.fui-bar-pink .fui-tab-ul {
+  border-left: none;
+  overflow: visible;
+}
+.fui-bar-pink .fui-tab-current {
+  border: 1px solid #D9B9AA;
+  border-top: 2px solid #A04B23;
+  border-bottom-width: 0;
+  margin-top: -1px;
+  background-color: #fff;
+  background-position: -9999px -9999px;
 }
 /**
 * @file fui-text.less

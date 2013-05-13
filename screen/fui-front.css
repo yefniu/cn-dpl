@@ -66,10 +66,11 @@
   color: #ff7300;
 }
 /**
- * @overview:ͼ��
- *
- * @author: terence.wangt
- * @date: 2013-05-03
+* @file fui-icon.less
+* @brief
+* @author terence.wangt@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-07
 */
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -1181,9 +1182,9 @@ a.fui-btn-notxt {
 /**
 * @file fui-tab.css
 * @brief 
-* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @author terence.wangt@alibaba-inc.com
 * @version 1.0.0 
-* @date 2013-04-19
+* @date 2013-05-13
 */
 .fui-tab .fui-t {
   position: relative;
@@ -1196,13 +1197,16 @@ a.fui-btn-notxt {
   top: 0;
   height: 25px;
   overflow: hidden;
+  border-left: 1px solid #d9d9d9;
 }
 .fui-tab .fui-tab-t {
   float: left;
   display: inline;
-  border: 1px solid #c8c8c8;
+  border: 1px solid #d9d9d9;
   border-bottom-width: 0;
-  margin: 1px 4px 0 0;
+  border-left-width: 0px;
+  margin: 0px 4px 0 0;
+  margin-right: 0px;
 }
 .fui-tab .fui-tab-t a:link,
 .fui-tab .fui-tab-t a:visited,
@@ -1219,9 +1223,9 @@ a.fui-btn-notxt {
 }
 .fui-tab .fui-tab-current {
   border: 1px solid #a0a0a0;
-  border-width: 2px 1px 0;
+  border-width: 1px 1px 0;
   margin-top: 0;
-  height: 24px -1;
+  height: 23px;
 }
 .fui-tab .fui-tab-current a:link,
 .fui-tab .fui-tab-current a:visited,
@@ -1236,10 +1240,10 @@ a.fui-btn-notxt {
   overflow: hidden;
 }
 .fui-tab-l .fui-t {
-  height: 30px;
+  height: 29px;
 }
 .fui-tab-l .fui-tab-ul {
-  height: 31px;
+  height: 30px;
 }
 .fui-tab-l .fui-tab-ul .fui-tab-t a:link,
 .fui-tab-l .fui-tab-ul .fui-tab-t a:visited,
@@ -1255,7 +1259,7 @@ a.fui-btn-notxt {
   font-size: 14px;
 }
 .fui-tab-l .fui-tab-current {
-  height: 30px -1;
+  height: 29px;
 }
 .fui-tab-l .fui-tab-current a:link,
 .fui-tab-l .fui-tab-current a:visited,

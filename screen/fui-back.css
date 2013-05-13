@@ -835,6 +835,7 @@ a.fui-btn-notxt {
 .fui-paging {
   text-align: left;
   color: #444;
+  zoom: 1;
 }
 .fui-paging:after {
   clear: both;

@@ -15,6 +15,7 @@
 /* box */
 /* btn */
 /* dialog */
+/* paging */
 /* path */
 /* process */
 /* tab */
@@ -26,8 +27,6 @@
 .fui-path .fui-c .fui-arrow,
 .fui-path-simple .fui-c .fui-arrow,
 .fui-dialog .fui-t .fui-close,
-.fui-paging .fui-prev .fui-ico,
-.fui-paging .fui-next .fui-ico,
 .fui-btn-img .fui-ico-search,
 .fui-btn-notxt .fui-ico-search,
 .fui-text-calendar,
@@ -834,7 +833,6 @@ a.fui-btn-notxt {
 * @date 2013-05-02
 */
 .fui-paging {
-  height: 22px;
   text-align: left;
   color: #444;
 }
@@ -845,22 +843,25 @@ a.fui-btn-notxt {
   vertical-align: middle;
   display: inline-block;
 }
+.fui-paging .fui-page-list {
+  font-size: 12px;
+}
 .fui-paging .fui-page-list a:link,
 .fui-paging .fui-page-list a:visited {
   width: 20px;
-  height: 18px;
-  padding: 1px 0;
+  height: 20px;
+  line-height: 20px;
   overflow: hidden;
   border: solid 1px #dcdcdc;
   margin-right: 4px;
-  color: #444;
+  color: #444444;
   text-decoration: none;
   text-align: center;
+  border-right: 1px solid #dcdcdc;
 }
 .fui-paging .fui-page-list a:hover {
   border-color: #5f8acf;
   color: #5f8acf;
-  font-weight: bold;
 }
 .fui-paging .fui-page-list .fui-current:link,
 .fui-paging .fui-page-list .fui-current:visited,
@@ -868,41 +869,47 @@ a.fui-btn-notxt {
   border: solid 1px #5f8acf;
   background-color: #5f8acf;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
+  border-right: 1px;
 }
 .fui-paging .fui-page-list .fui-omit {
+  height: 20px;
   margin-right: 4px;
   padding: 2px 0;
+  border-left: 0px solid #dcdcdc;
+  border-right: 1px;
 }
-.fui-paging .fui-page-list .fui-prev:link .fui-ico,
-.fui-paging .fui-page-list .fui-prevvisited .fui-ico {
+.fui-paging .fui-page-list .fui-prev:link,
+.fui-paging .fui-page-list .fui-prevvisited {
+  width: 48px;
+  margin-right: 0px;
+}
+.fui-paging .fui-page-list .fui-prev:link .fui-txt,
+.fui-paging .fui-page-list .fui-prevvisited .fui-txt {
   float: left;
   display: inline;
-  width: 20px;
   height: 18px;
-  background-position: -60px -16px;
+  margin: 0 4px 0 6px;
   cursor: pointer;
-}
-.fui-paging .fui-page-list .fui-prev:hover .fui-ico {
-  background-position: -80px -16px;
 }
 .fui-paging .fui-page-list .fui-prev-disabled:link,
 .fui-paging .fui-page-list .fui-prev-disabled:visited,
 .fui-paging .fui-page-list .fui-prev-disabled:hover {
   border-color: #dcdcdc;
-  cursor: default;
 }
-.fui-paging .fui-page-list .fui-prev-disabled:link .fui-ico,
-.fui-paging .fui-page-list .fui-prev-disabled:visited .fui-ico,
-.fui-paging .fui-page-list .fui-prev-disabled:hover .fui-ico {
-  background-position: -40px -16px;
+.fui-paging .fui-page-list .fui-prev-disabled:link .fui-txt,
+.fui-paging .fui-page-list .fui-prev-disabled:visited .fui-txt,
+.fui-paging .fui-page-list .fui-prev-disabled:hover .fui-txt {
+  color: #dcdcdc;
   cursor: default;
 }
 .fui-paging .fui-page-list .fui-next:link,
 .fui-paging .fui-page-list .fui-next:visited,
 .fui-paging .fui-page-list .fui-next:hover {
-  width: 60px;
+  width: 48px;
   font-weight: normal;
+  border-right: 1px solid #dcdcdc;
+  margin-right: 0;
 }
 .fui-paging .fui-page-list .fui-next:link .fui-txt,
 .fui-paging .fui-page-list .fui-next:visited .fui-txt,
@@ -913,30 +920,11 @@ a.fui-btn-notxt {
   margin: 0 4px 0 6px;
   cursor: pointer;
 }
-.fui-paging .fui-page-list .fui-next:link .fui-ico,
-.fui-paging .fui-page-list .fui-next:visited .fui-ico {
-  float: left;
-  display: inline;
-  width: 8px;
-  height: 10px;
-  margin-top: 4px;
-  background-position: -66px -40px;
-  cursor: pointer;
-}
-.fui-paging .fui-page-list .fui-next:hover {
-  background-position: -86px -40px;
-}
 .fui-paging .fui-page-list .fui-next-disabled:link,
 .fui-paging .fui-page-list .fui-next-disabled:visited,
 .fui-paging .fui-page-list .fui-next-disabled:hover {
   border-color: #dcdcdc;
-  cursor: default;
-}
-.fui-paging .fui-page-list .fui-next-disabled:link .fui-ico,
-.fui-paging .fui-page-list .fui-next-disabled:visited .fui-ico,
-.fui-paging .fui-page-list .fui-next-disabled:hover .fui-ico {
-  background-position: -46px -40px;
-  cursor: default;
+  margin-right: 0;
 }
 .fui-paging .fui-page-list .fui-next-disabled:link .fui-txt,
 .fui-paging .fui-page-list .fui-next-disabled:visited .fui-txt,
@@ -948,9 +936,6 @@ a.fui-btn-notxt {
   padding: 2px 0;
   margin-right: 0;
 }
-.fui-paging .fui-number {
-  margin-left: 4px;
-}
 .fui-paging .fui-number span {
   margin: 0 4px;
   padding: 2px 0;
@@ -960,6 +945,8 @@ a.fui-btn-notxt {
 .fui-paging .fui-number input {
   width: 32px;
 }
+.fui-paging .fui-paging-total,
+.fui-paging .fui-number,
 .fui-paging .fui-forward {
   margin-left: 4px;
 }

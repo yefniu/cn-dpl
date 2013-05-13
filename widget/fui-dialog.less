@@ -11,11 +11,12 @@
 	float:left;
 	display:none;
 	border:@dialogBorderWidth solid @dialogBorderColor;
-	border:@dialogBorderWidth solid rgba(0,0,0,0.4);
+	border:@dialogBorderWidth solid rgba(0,0,0,@dialogBorderOpacity);
 	.fui-t{
 		height: @dialogHeaderHeight;
-		padding:2px 8px 2px 16px;
+		padding:@dialogHeaderPadding;
 		background-color: @dialogHeaderBgColor;
+		border:@dialogHeaderBorderWidth solid @dialogContentBorderColor;
 		cursor:move;
 	}
 	.fui-title{
@@ -44,7 +45,7 @@
 		background-color: @dialogContentBgColor;
 		border:@dialogContentBorderWidth solid @dialogContentBorderColor;
 		border-top-width: @dialogContentBorderTopWidth;
-		padding:12px 8px 7px;
+		padding:@dialogDPadding;
 		color: @dialogFontColor;
 		.fui-ico-serious,.fui-ico-success,.fui-ico-general,.fui-ico-doubt{
 			display:inline-block;
@@ -66,23 +67,24 @@
 		}
 	}
 	.fui-m{
-		padding:0 4px 8px;
+		padding:@dialogMPadding;
 	}
 	.fui-b{
-		padding:5px 4px 0;
+		padding:@dialogBPadding;
+		margin:@dialogBMargin;
 		border-top:solid 1px #f0f0f0;
 		text-align:right;
 	}
 }
 .fui-dialog-l{
 	.fui-d{
-		padding:24px 8px 10px;
+		padding:@dialogLargeDPadding;
 	}
 	.fui-m{
-		padding:0 16px 24px;
+		padding:@dialogLargeMPadding;
 	}
 	.fui-b {
-		padding:12px 16px 0;
+		padding:@dialogLargeBPadding;
 	}
 }
 .fui-dialog-simple {

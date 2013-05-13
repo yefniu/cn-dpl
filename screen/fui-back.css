@@ -882,7 +882,7 @@ a.fui-btn-notxt {
 .fui-paging .fui-page-list .fui-prev:link,
 .fui-paging .fui-page-list .fui-prev:visited {
   width: 48px;
-  margin-right: 0px;
+  margin-right: 4px;
   border-right: 1px solid #dcdcdc;
 }
 .fui-paging .fui-page-list .fui-prev:link .fui-txt,

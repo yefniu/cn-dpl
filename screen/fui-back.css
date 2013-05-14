@@ -852,7 +852,6 @@ a.fui-btn-notxt {
   display: inline-block;
 }
 .fui-paging .fui-page-list {
-  float: left;
   font-size: 12px;
 }
 .fui-paging .fui-page-list a:link,
@@ -893,7 +892,7 @@ a.fui-btn-notxt {
 .fui-paging .fui-page-list .fui-prev:link,
 .fui-paging .fui-page-list .fui-prev:visited {
   width: 48px;
-  margin-right: 4px;
+  margin-right: 10px;
   border-right: 1px solid #dcdcdc;
 }
 .fui-paging .fui-page-list .fui-prev:link .fui-txt,
@@ -960,7 +959,6 @@ a.fui-btn-notxt {
 .fui-paging .fui-paging-total,
 .fui-paging .fui-number,
 .fui-paging .fui-forward {
-  float: left;
   margin-left: 4px;
 }
 /**
@@ -1255,13 +1253,13 @@ a.fui-btn-notxt {
 .fui-tab-bar .fui-tab-t {
   border: none;
   margin-left: -1px;
-  background-position: right -209px;
+  background-position: right -206px;
 }
 .fui-tab-bar .fui-tab-t a:link,
 .fui-tab-bar .fui-tab-t a:visited,
 .fui-tab-bar .fui-tab-t a:hover {
   font-size: 12px;
-  background: transparent;
+  background-color: transparent;
 }
 .fui-tab-bar .fui-tab-t a:hover {
   text-decoration: underline;
@@ -1275,7 +1273,27 @@ a.fui-btn-notxt {
   border-top: 2px solid #666;
   border-bottom-width: 0;
   margin-top: -1px;
-  background: none;
+  background-color: #fff;
+  background-position: -9999px -9999px;
+}
+.fui-bar-pink .fui-t {
+  background-color: #fbf3ee;
+  border-bottom: 1px solid #D9B9AA;
+}
+.fui-bar-pink .fui-tab-t {
+  background-position: right -258px;
+}
+.fui-bar-pink .fui-tab-ul {
+  border-left: none;
+  overflow: visible;
+}
+.fui-bar-pink .fui-tab-current {
+  border: 1px solid #D9B9AA;
+  border-top: 2px solid #A04B23;
+  border-bottom-width: 0;
+  margin-top: -1px;
+  background-color: #fff;
+  background-position: -9999px -9999px;
 }
 /**
 * @file fui-text.less

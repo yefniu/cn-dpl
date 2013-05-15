@@ -812,6 +812,7 @@ a.fui-btn-notxt {
 .fui-dialog .d-alert {
   padding: 26px 0;
   font-size: 14px;
+  font-weight: 700;
   text-align: center;
 }
 .fui-dialog .d-alert .detail {
@@ -824,7 +825,7 @@ a.fui-btn-notxt {
   display: inline-block;
   height: 24px;
   width: 24px;
-  margin-right: 8px;
+  margin-right: 10px;
   background: url(http://img.china.alibaba.com/cms/upload/2013/807/492/1294708_681975369.png) no-repeat 0 -100px;
   vertical-align: middle;
 }
@@ -1514,19 +1515,16 @@ a.fui-btn-notxt {
 .fui-tip .fui-ico-success,
 .fui-tip .fui-ico-general {
   float: left;
-  display: inline-block;
+  display: inline;
   width: 12px;
   height: 18px;
-  overflow: hidden;
-  margin: 0 6px 0 0;
-  background-position: -40px -110px;
-  vertical-align: middle;
+  background-position: -40px -111px;
 }
 .fui-tip .fui-ico-success {
-  background-position: -100px -110px;
+  background-position: -100px -111px;
 }
 .fui-tip .fui-ico-general {
-  background-position: -40px -170px;
+  background-position: -40px -171px;
 }
 .fui-tip-icon .fui-d {
   margin-left: 20px;

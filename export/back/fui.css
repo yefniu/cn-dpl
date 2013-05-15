@@ -422,13 +422,13 @@ a.alitalk-off {
   vertical-align: middle;
   cursor: pointer;
   overflow: visible;
-  background-color: #f0f0f0;
-  background-image: -moz-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: -ms-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: -o-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: linear-gradient(top, #fcfcfc, #e4e4e4);
+  background-color: #f6f6f6;
+  background-image: -moz-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: -ms-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: -o-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: linear-gradient(top, #fafafa, #f2f2f2);
   border-radius: 3px;
   *padding: 0 12px;
   *height: 26px;
@@ -457,24 +457,24 @@ a.alitalk-off {
 .fui-btn:hover {
   color: #444444;
   text-decoration: none;
-  background-color: #dbdbdb;
-  background-image: -moz-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#cfcfcf));
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: -o-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: linear-gradient(top, #e6e6e6, #cfcfcf);
+  background-color: #ebebeb;
+  background-image: -moz-linear-gradient(top, #e6e6e6, #efefef);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #efefef);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#efefef));
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #efefef);
+  background-image: -o-linear-gradient(top, #e6e6e6, #efefef);
+  background-image: linear-gradient(top, #e6e6e6, #efefef);
 }
 .fui-btn:active {
   color: #505050;
   text-decoration: none;
-  background-color: #d5d5d5;
-  background-image: -moz-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: -ms-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cecece), to(#dcdcdc));
-  background-image: -webkit-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: -o-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: linear-gradient(top, #cecece, #dcdcdc);
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#efefef), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: -o-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: linear-gradient(top, #efefef, #f3f3f3);
 }
 .fui-btn-action {
   border: solid 1px #729ce0;
@@ -512,7 +512,6 @@ a.alitalk-off {
   border: solid 1px #e89f0e;
   border-bottom-color: #e89f0e;
   color: #ffffff;
-  font-weight: bold;
   background-color: #f7a008;
   background-image: -moz-linear-gradient(top, #fcb10a, #f18e06);
   background-image: -ms-linear-gradient(top, #fcb10a, #f18e06);
@@ -545,7 +544,6 @@ a.alitalk-off {
   border: solid 1px #f7bf4f;
   border-bottom-color: #f7bf4f;
   color: #aa5500;
-  font-weight: bold;
   background-color: #feedad;
   background-image: -moz-linear-gradient(top, #fff1b7, #fde9a3);
   background-image: -ms-linear-gradient(top, #fff1b7, #fde9a3);

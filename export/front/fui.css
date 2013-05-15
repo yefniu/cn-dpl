@@ -512,7 +512,6 @@ a.alitalk-off {
   border: solid 1px #ff5400;
   border-bottom-color: #ff5400;
   color: #ffffff;
-  font-weight: bold;
   background-color: #ff7100;
   background-image: -moz-linear-gradient(top, #ff7900, #ff6900);
   background-image: -ms-linear-gradient(top, #ff7900, #ff6900);
@@ -545,7 +544,6 @@ a.alitalk-off {
   border: solid 1px #f7bf4f;
   border-bottom-color: #f7bf4f;
   color: #aa5500;
-  font-weight: bold;
   background-color: #feedad;
   background-image: -moz-linear-gradient(top, #fff1b7, #fde9a3);
   background-image: -ms-linear-gradient(top, #fff1b7, #fde9a3);

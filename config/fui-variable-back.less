@@ -17,12 +17,12 @@
 @btnFontColor: #444;
 @btnBorderColor: #b3b3b3;
 @btnBorderBottomColor: #9a9a9a;
-@btnGraidentStart: #fcfcfc;
-@btnGraidentEnd: #e4e4e4;
+@btnGraidentStart: #FAFAFA;
+@btnGraidentEnd: #F2F2F2;
 @btnHoverGraidentStart: #e6e6e6;
-@btnHoverGraidentEnd: #cfcfcf;
-@btnActiveGraidentStart: #cecece;
-@btnActiveGraidentEnd: #dcdcdc;
+@btnHoverGraidentEnd: #EFEFEF;
+@btnActiveGraidentStart: #EFEFEF;
+@btnActiveGraidentEnd: #F3F3F3;
 
 @btnActionBorderColor: #729ce0;
 @btnActionBorderBottomColor: #6688c0;
@@ -133,9 +133,11 @@
 @tabHeaderBgColor: #f2f2f2;
 @tabHeaderFontColor: #5a5a5a;
 @tabHeaderCurrentMarginRight:4px;
+@tabHeaderCurrentMarginLeft:0px;
 @tabHeaderCurrentBorderWidth: 2px 1px 0;
 @tabHeaderCurrentBorderColor: #a0a0a0;
 @tabHeaderLargeHeight: 30px;
+@tabHeaderFontSize:14px;
 
 @tabBoxBgColor:#f0f0f0;
 @tabBoxBgColorPink:#FBF3EE;
@@ -183,22 +185,3 @@
 
  /* common */
 @DefaultFontColor: #444;
-
-.linear-graident(@colorStart, @colorEnd){
-    background-color: (@colorEnd + @colorStart) / 2;
-    background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: -ms-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@colorStart), to(@colorEnd));
-    background-image: -webkit-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: -o-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: linear-gradient(top, @colorStart, @colorEnd);
-}
-
-.clearFloat(){ 
-	&:after{
-		clear: both;
-		content: " ";
-		display: block;
-		height: 0;
-	}
-}

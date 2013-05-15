@@ -1,13 +1,17 @@
 /* background */
 .fui-path .fui-c .fui-arrow,
 .fui-path-simple .fui-c .fui-arrow,
-.fui-dialog .fui-t .fui-close,
+.fui-dialog .d-header .d-close,
 .fui-btn-img .fui-ico-search,
 .fui-btn-notxt .fui-ico-search,
 .fui-text-calendar,
 .fui-tip .fui-tip-row-close,
+.fui-tip-simple .fui-tip-row-close,
 .fui-tip .fui-ico-speaker,
 .fui-tip .fui-ico-bubble,
+.fui-tip .fui-ico-serious,
+.fui-tip .fui-ico-success,
+.fui-tip .fui-ico-general,
 .fui-tip-block .fui-ico-serious,
 .fui-tip-block .fui-ico-success,
 .fui-tip-block .fui-ico-general,
@@ -20,11 +24,11 @@
 .fui-process .fui-f-c,
 .fui-process .fui-w-w,
 .fui-process .fui-f-f,
-.fui-dialog .fui-d .fui-ico-serious,
-.fui-dialog .fui-d .fui-ico-success,
-.fui-dialog .fui-d .fui-ico-general,
+.fui-dialog .d-content .fui-ico-serious,
+.fui-dialog .d-content .fui-ico-success,
+.fui-dialog .d-content .fui-ico-general,
 .fui-tab-bar .fui-tab-t,
-.fui-dialog .fui-d .fui-ico-doubt{background: url("http://img.china.alibaba.com/cms/upload/2013/294/972/1279492_681975369.png") no-repeat;}
+.fui-dialog .d-content .fui-ico-doubt{background: url("http://img.china.alibaba.com/cms/upload/2013/807/492/1294708_681975369.png") no-repeat;}
 .fui-loading .fui-ico{background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w24.gif") no-repeat;}
 .fui-loading-part .fui-ico{background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w16.gif") no-repeat;}
 
@@ -32,7 +36,30 @@
 
 .fui-lnk:link,
 .fui-lnk:visited{color: #369;}
-.fui-lnk:hover{color: #ff7300;} 
+.fui-lnk:hover{color: #ff7300;}
+
+ /* common */
+@DefaultFontColor: #444;
+
+.linear-graident(@colorStart, @colorEnd){
+    background-color: (@colorEnd + @colorStart) / 2;
+    background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -ms-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@colorStart), to(@colorEnd));
+    background-image: -webkit-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -o-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: linear-gradient(top, @colorStart, @colorEnd);
+}
+
+.clearFloat(){ 
+	zoom:1;
+	&:after{
+		clear: both;
+		content: " ";
+		display: block;
+		height: 0;
+	}
+}
 
 
 

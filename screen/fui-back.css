@@ -26,13 +26,17 @@
 /* background */
 .fui-path .fui-c .fui-arrow,
 .fui-path-simple .fui-c .fui-arrow,
-.fui-dialog .fui-t .fui-close,
+.fui-dialog .d-header .d-close,
 .fui-btn-img .fui-ico-search,
 .fui-btn-notxt .fui-ico-search,
 .fui-text-calendar,
 .fui-tip .fui-tip-row-close,
+.fui-tip-simple .fui-tip-row-close,
 .fui-tip .fui-ico-speaker,
 .fui-tip .fui-ico-bubble,
+.fui-tip .fui-ico-serious,
+.fui-tip .fui-ico-success,
+.fui-tip .fui-ico-general,
 .fui-tip-block .fui-ico-serious,
 .fui-tip-block .fui-ico-success,
 .fui-tip-block .fui-ico-general,
@@ -45,12 +49,12 @@
 .fui-process .fui-f-c,
 .fui-process .fui-w-w,
 .fui-process .fui-f-f,
-.fui-dialog .fui-d .fui-ico-serious,
-.fui-dialog .fui-d .fui-ico-success,
-.fui-dialog .fui-d .fui-ico-general,
+.fui-dialog .d-content .fui-ico-serious,
+.fui-dialog .d-content .fui-ico-success,
+.fui-dialog .d-content .fui-ico-general,
 .fui-tab-bar .fui-tab-t,
-.fui-dialog .fui-d .fui-ico-doubt {
-  background: url("http://img.china.alibaba.com/cms/upload/2013/294/972/1279492_681975369.png") no-repeat;
+.fui-dialog .d-content .fui-ico-doubt {
+  background: url("http://img.china.alibaba.com/cms/upload/2013/807/492/1294708_681975369.png") no-repeat;
 }
 .fui-loading .fui-ico {
   background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w24.gif") no-repeat;
@@ -65,6 +69,7 @@
 .fui-lnk:hover {
   color: #ff7300;
 }
+/* common */
 /**
 * @file fui-icon.less
 * @brief
@@ -733,14 +738,14 @@ a.fui-btn-notxt {
   border: 8px solid #999999;
   border: 8px solid rgba(0, 0, 0, 0.4);
 }
-.fui-dialog .fui-t {
+.fui-dialog .d-header {
   height: 28px;
   padding: 2px 8px 2px 16px;
   background-color: #f0f0f0;
   border: 0px solid #f0f0f0;
   cursor: move;
 }
-.fui-dialog .fui-title {
+.fui-dialog .d-title {
   float: left;
   display: inline;
   color: #444444;
@@ -748,8 +753,8 @@ a.fui-btn-notxt {
   line-height: 2;
   font-weight: bold;
 }
-.fui-dialog .fui-close:link,
-.fui-dialog .fui-close:visited {
+.fui-dialog .d-close:link,
+.fui-dialog .d-close:visited {
   float: right;
   display: inline;
   margin-top: 6px;
@@ -758,20 +763,20 @@ a.fui-btn-notxt {
   overflow: hidden;
   background-position: 0 -40px;
 }
-.fui-dialog .fui-close:hover {
+.fui-dialog .d-close:hover {
   background-position: -20px -40px;
 }
-.fui-dialog .fui-d {
+.fui-dialog .d-detail {
   background-color: #ffffff;
   border: 2px solid #f0f0f0;
   border-top-width: 0px;
   padding: 12px 8px 7px;
   color: #444444;
 }
-.fui-dialog .fui-d .fui-ico-serious,
-.fui-dialog .fui-d .fui-ico-success,
-.fui-dialog .fui-d .fui-ico-general,
-.fui-dialog .fui-d .fui-ico-doubt {
+.fui-dialog .d-detail .fui-ico-serious,
+.fui-dialog .d-detail .fui-ico-success,
+.fui-dialog .d-detail .fui-ico-general,
+.fui-dialog .d-detail .fui-ico-doubt {
   display: inline-block;
   width: 16px;
   height: 18px;
@@ -780,48 +785,92 @@ a.fui-btn-notxt {
   background-position: 0 -234px;
   vertical-align: middle;
 }
-.fui-dialog .fui-d .fui-ico-success {
+.fui-dialog .d-detail .fui-ico-success {
   background-position: -20px -234px;
 }
-.fui-dialog .fui-d .fui-ico-general {
+.fui-dialog .d-detail .fui-ico-general {
   background-position: -40px -234px;
 }
-.fui-dialog .fui-d .fui-ico-doubt {
+.fui-dialog .d-detail .fui-ico-doubt {
   background-position: -60px -234px;
 }
-.fui-dialog .fui-m {
+.fui-dialog .d-content {
   padding: 0 4px 8px;
 }
-.fui-dialog .fui-b {
+.fui-dialog .d-footer {
+  zoom: 1;
   padding: 5px 4px 0;
   margin: 0px;
   border-top: solid 1px #f0f0f0;
   text-align: right;
 }
-.fui-dialog-l .fui-d {
+.fui-dialog .d-footer:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+}
+.fui-dialog .d-footer:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+}
+.fui-dialog .d-footer .d-btn-group .fui-btn {
+  margin-left: 12px;
+}
+.fui-dialog .d-alert {
+  padding: 26px 0;
+  font-size: 14px;
+  text-align: center;
+}
+.fui-dialog .d-alert .detail {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+}
+.fui-dialog .d-alert i {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/807/492/1294708_681975369.png) no-repeat 0 -100px;
+  vertical-align: middle;
+}
+.fui-dialog .d-alert-error i {
+  background-position: 0 -340px;
+}
+.fui-dialog .d-alert-info i {
+  background-position: 0 -419px;
+}
+.fui-dialog .d-alert-success i {
+  background-position: 0 -380px;
+}
+.fui-dialog-l .d-detail {
   padding: 24px 8px 10px;
 }
-.fui-dialog-l .fui-m {
+.fui-dialog-l .d-content {
   padding: 0 16px 24px;
 }
-.fui-dialog-l .fui-b {
+.fui-dialog-l .d-footer {
   padding: 12px 16px 0;
 }
 .fui-dialog-simple {
   border: solid 4px #e5e5e5;
   border: solid 4px rgba(0, 0, 0, 0.1);
 }
-.fui-dialog-simple .fui-d {
+.fui-dialog-simple .d-detail {
   background-color: #ffffff;
   border: dialogSimplateContentBorderWidth solid 1px;
   padding: 8px 8px 4px;
   text-align: center;
   white-space: nowrap;
 }
-.fui-dialog-simple .fui-m {
+.fui-dialog-simple .d-content {
   padding: 8px 12px 12px;
 }
-.fui-dialog-simple .fui-b {
+.fui-dialog-simple .d-footer {
   padding: 0 0 4px;
   border-width: 0;
   text-align: center;
@@ -837,6 +886,12 @@ a.fui-btn-notxt {
   text-align: left;
   color: #444;
   zoom: 1;
+}
+.fui-paging:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
 }
 .fui-paging:after {
   clear: both;
@@ -948,7 +1003,6 @@ a.fui-btn-notxt {
   margin-right: 0;
 }
 .fui-paging .fui-number span {
-  margin: 0 4px;
   padding: 2px 0;
   vertical-align: top;
   *padding: 4px 0 0;
@@ -1376,8 +1430,13 @@ a.fui-btn-notxt {
 .fui-tip .fui-tip-row-close:active {
   opacity: 0.6;
 }
+.fui-tip .fui-t {
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 3px;
+}
 .fui-tip .fui-d {
-  margin: 0 12px 0 26px;
+  margin: 0 12px 0 0;
   line-height: 1.5;
   font-size: 12px;
 }
@@ -1385,9 +1444,33 @@ a.fui-btn-notxt {
   display: block;
   color: #f27800;
 }
+.fui-tip .fui-d .fui-btn {
+  margin-left: 6px;
+}
 .fui-tip .fui-d .fui-p {
   display: block;
   margin-top: 4px;
+}
+.fui-tip .fui-ico-serious,
+.fui-tip .fui-ico-success,
+.fui-tip .fui-ico-general {
+  float: left;
+  display: inline-block;
+  width: 12px;
+  height: 18px;
+  overflow: hidden;
+  margin: 0 6px 0 0;
+  background-position: -40px -110px;
+  vertical-align: middle;
+}
+.fui-tip .fui-ico-success {
+  background-position: -100px -110px;
+}
+.fui-tip .fui-ico-general {
+  background-position: -40px -170px;
+}
+.fui-tip-icon .fui-d {
+  margin-left: 20px;
 }
 .fui-tip-block {
   background-color: #e8f1f7;
@@ -1435,11 +1518,8 @@ a.fui-btn-notxt {
   padding: 0;
   background-color: #fffbdd;
   border: solid 1px #e7d3ac;
-  height: 68px;
   width: 230px;
   overflow: visible;
-}
-.fui-tip-simple .fui-d {
   padding: 6px;
 }
 .fui-tip-simple .fui-d .fui-ico-bulb {
@@ -1659,6 +1739,31 @@ a.fui-btn-notxt {
   top: auto;
   bottom: 8px;
 }
+.fui-tip-simple .fui-tip-row-close {
+  margin-right: 0px;
+}
+.fui-tip-simple .fui-tip-row-close:link,
+.fui-tip-simple .fui-tip-row-close:visited {
+  float: right;
+  display: inline;
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  overflow: hidden;
+  background-position: 0 -20px;
+}
+.fui-tip-simple .fui-tip-row-close:hover {
+  background-position: -20px -20px;
+}
+.fui-tip-simple .fui-tip-row-close:active {
+  opacity: 0.6;
+}
+.fui-tip-multi {
+  padding: 11px 12px;
+}
+.fui-tip-close .fui-d {
+  padding-right: 16px;
+}
 .fui-tip-inline {
   display: inline-block;
   font-size: 12px;
@@ -1702,6 +1807,26 @@ a.fui-btn-notxt {
 .fui-tip-light .fui-l-t i {
   border: solid 1px #d8d8d8;
   background-color: #ffffff;
+  border-width: 1px 0;
+}
+.fui-tip-primary {
+  border: solid 1px #c0d8e7;
+  background-color: #e8f5fd;
+}
+.fui-tip-primary .fui-t-l i,
+.fui-tip-primary .fui-t-r i,
+.fui-tip-primary .fui-b-r i,
+.fui-tip-primary .fui-b-l i {
+  border: solid 1px #c0d8e7;
+  background-color: #e8f5fd;
+  border-width: 0 1px;
+}
+.fui-tip-primary .fui-r-t i,
+.fui-tip-primary .fui-r-b i,
+.fui-tip-primary .fui-l-b i,
+.fui-tip-primary .fui-l-t i {
+  border: solid 1px #c0d8e7;
+  background-color: #e8f5fd;
   border-width: 1px 0;
 }
 .fui-tip-inline-warning {

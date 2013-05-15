@@ -39,18 +39,47 @@
 		}
 		margin-right: @tipCloseMr;
 	}
+	.fui-t {
+		font-weight:700;
+		color:#444;
+		margin-bottom:3px;
+	}
 	.fui-d {
-		margin:0 12px 0 26px;
+		margin:0 12px 0 0;
 		line-height:1.5;
 		font-size:12px;
 		.fui-title {
 			display:block;
 			color:#f27800;
 		}
+		.fui-btn {
+			margin-left:6px;
+		}
 		.fui-p {
 			display:block;
 			margin-top:4px;
 		}
+	}
+	.fui-ico-serious,.fui-ico-success,.fui-ico-general {
+		float:left;
+		display:inline-block;
+		width:12px;
+		height:18px;
+		overflow:hidden;
+		margin:0 6px 0 0;
+		background-position:-40px -110px;
+		vertical-align:middle;
+	}
+	.fui-ico-success {
+		background-position:-100px -110px;
+	}
+	.fui-ico-general {
+		background-position:-40px -170px;
+	}
+}
+.fui-tip-icon{
+	.fui-d{
+		margin-left:20px;
 	}
 }
 .fui-tip-block {
@@ -97,11 +126,10 @@
 	padding:0;
 	background-color:@tipBgColor;
 	border:solid 1px @tipBorderColor;
-	height:68px;
 	width:230px;
 	overflow:visible;
+	padding:@tipSimplePadding;
 	.fui-d {
-		padding:@tipSimplePadding;
 		.fui-ico-bulb {
 			display:inline-block;
 			width:32px;
@@ -277,6 +305,32 @@
 		top:auto;
 		bottom:8px;
 	}
+	.fui-tip-row-close{
+		&:link,&:visited{
+			float:right;
+			display:inline;
+			width:12px;
+			height:12px;
+			margin-top:3px;
+			overflow:hidden;
+			background-position:0 -20px;
+		}
+		&:hover{
+			background-position:-20px -20px;
+		}
+		&:active{
+			opacity:0.6;
+		}
+		margin-right: @tipCloseMr;
+	}
+}
+.fui-tip-multi{
+	padding:11px 12px;
+}
+.fui-tip-close{
+	.fui-d{
+		padding-right:16px;
+	}
 }
 .fui-tip-inline {
 	display:inline-block;
@@ -315,6 +369,24 @@
 		i{
 			border:solid 1px @tipLightBorderColor;
 			background-color:@tipLightBgColor;
+			border-width:1px 0;
+		}
+	}
+}
+.fui-tip-primary {
+	border:solid 1px @tipPrimaryBorderColor;
+	background-color:@tipPrimaryBgColor;
+	.fui-t-l,.fui-t-r,.fui-b-r,.fui-b-l{
+		i{
+			border:solid 1px @tipPrimaryBorderColor;
+			background-color:@tipPrimaryBgColor;
+			border-width:0 1px;
+		}
+	}
+	.fui-r-t,.fui-r-b,.fui-l-b,.fui-l-t{
+		i{
+			border:solid 1px @tipPrimaryBorderColor;
+			background-color:@tipPrimaryBgColor;
 			border-width:1px 0;
 		}
 	}

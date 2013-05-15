@@ -158,12 +158,15 @@
 @tipFontColor: #444;
 @tipBorderColor: #f4d79a;
 @tipBgColor: #ffffe5;
-@tipPadding:8px 12px;
+@tipPadding:6px 12px;
 @tipCloseMr:-4px;
-@tipSimplePadding:8px 12px;
+@tipSimplePadding:6px 12px;
 
 @tipLightBorderColor:#d8d8d8;
 @tipLightBgColor:#fff;
+
+@tipPrimaryBorderColor:#c0d8e7;
+@tipPrimaryBgColor:#e8f5fd;
 
 @tipBlockBorderColor: #c0d8e7;
 @tipBlockBgColor: #e8f5fd;
@@ -176,24 +179,4 @@
 
 @titleSimpleBgColor: #4d6da1;
 
- /* common */
-@DefaultFontColor: #444;
 
-.linear-graident(@colorStart, @colorEnd){
-    background-color: (@colorEnd + @colorStart) / 2;
-    background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: -ms-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@colorStart), to(@colorEnd));
-    background-image: -webkit-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: -o-linear-gradient(top, @colorStart, @colorEnd);
-    background-image: linear-gradient(top, @colorStart, @colorEnd);
-}
-
-.clearFloat(){ 
-	&:after{
-		clear: both;
-		content: " ";
-		display: block;
-		height: 0;
-	}
-}

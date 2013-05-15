@@ -1229,7 +1229,7 @@ a.fui-btn-notxt {
 .fui-tab-l .fui-tab-t a:hover {
   height: 25px;
   padding: 0 13px 2px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .fui-tab-l .fui-tab-current {
   height: 29px;
@@ -1238,6 +1238,7 @@ a.fui-btn-notxt {
 .fui-tab-l .fui-tab-current a:visited,
 .fui-tab-l .fui-tab-current a:hover {
   padding: 1px 13px 3px;
+  font-size: 14px;
 }
 .fui-tab-gray .fui-tab-current a:link,
 .fui-tab-gray .fui-tab-current a:visited,

@@ -68,7 +68,7 @@
 .fui-lnk:hover {
   color: #ff7300;
 }
-/* common functions */
+/* common */
 /**
 * @file fui-icon.less
 * @brief
@@ -795,6 +795,7 @@ a.fui-btn-notxt {
   padding: 12px;
 }
 .fui-dialog .d-footer {
+  zoom: 1;
   padding: 8px 4px;
   margin: 0 10px;
   border-top: solid 1px #f0f0f0;
@@ -874,6 +875,7 @@ a.fui-btn-notxt {
 * @date 2013-05-02
 */
 .fui-paging {
+  zoom: 1;
   text-align: left;
   color: #444;
 }
@@ -1431,7 +1433,7 @@ a.fui-btn-notxt {
 .fui-text:focus {
   border-color: #6482b9;
   background-color: #ffffff;
-  box-shadow: 0 0 1px #acddf6;
+  box-shadow: 0 0 2px #6482b9;
 }
 .fui-text-s {
   padding: 1px 2px;
@@ -1441,7 +1443,7 @@ a.fui-btn-notxt {
 .fui-text-error {
   border-color: #ffbb48;
   background-color: #ffffff;
-  box-shadow: 0px 0px 1px #ffdca3;
+  box-shadow: 0px 0px 2px #ffdca3;
 }
 .fui-text-calendar {
   width: 112px;

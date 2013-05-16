@@ -33,12 +33,14 @@
 .fui-loading-part .fui-ico{background: url("http://img.china.alibaba.com/cms/upload/work/dpl/loading-w16.gif") no-repeat;}
 
 
+
 .fui-lnk:link,
 .fui-lnk:visited{color: #369;}
-.fui-lnk:hover{color: #ff7300;} 
+.fui-lnk:hover{color: #ff7300;}
 
+ /* common */
+@DefaultFontColor: #444;
 
-/* common functions */
 .linear-graident(@colorStart, @colorEnd){
     background-color: (@colorEnd + @colorStart) / 2;
     background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
@@ -50,12 +52,15 @@
 }
 
 .clearFloat(){ 
-	&:after{
-		clear: both;
-		content: " ";
-		display: block;
-		height: 0;
-	}
+    zoom:1;
+    &:after{
+        clear: both;
+        content: " ";
+        display: block;
+        height: 0;
+    }
+}
+
 }
 
 

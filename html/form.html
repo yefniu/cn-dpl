@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="gbk"/>
+        <title>DPL</title>
+        <link rel="stylesheet" rev="stylesheet" href="../widget/reset.css" />
+  		<link rel="stylesheet" rev="stylesheet" href="../export/front/fui.css" />
+		<script src="http://wd.alibaba-inc.com/fdevlib/static/js/merge-fdev4.js"></script>
+		
+        <base target="_blank"></base>
+    </head>
+    <body>		
+		<div style="margin-top: 8px;">
+			<input type="text" class="fui-text fui-text-s fui-text-error" /><span class="fui-tip-inline fui-tip-inline-warning" style="margin-left: 10px;"><i class="fui-ico-serious"></i><span class="fui-txt">出错提示</span></span>
+		</div>		
+		
+		<div style="margin-top: 8px;">
+			<input type="text" class="fui-text fui-text-s" /><span class="fui-tip-inline" style="margin-left: 10px;"><i class="fui-ico-success"></i><span class="fui-txt">成功提示</span></span>
+		</div>	
+		
+		<div style="margin-top: 8px;">
+			<input type="text" class="fui-text fui-text-s" /><span class="fui-tip-inline" style="margin-left: 10px;"><i class="fui-ico-general"></i><span class="fui-txt">关注消息提示条
+			</span></span>
+		</div>
+		<div style="margin-top: 8px;">
+			<input type="text" class="fui-text fui-text-s fui-text-disable" disabled/>
+		</div>
+		<div style="margin-top: 8px;">
+			<input type="text" class="fui-text fui-text-s" />
+			<a href="#" target="_self" class="fui-btn fui-btn-s">按钮</a>
+		</div>
+		
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t">
+					<span>单选项：</span>
+				</div>
+				<div class="fui-d fui-form-radio">
+					<ul>
+						<li>
+							<input type="radio" name"test-radio" class="fui-radio" />
+							<label class="fui-radio-label">选项</label>
+						</li>
+						<li>
+							<input type="radio" name"test-radio" class="fui-radio" />
+							<label class="fui-radio-label">选项</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t">
+					<span>单选项：</span>
+				</div>
+				<div class="fui-d fui-form-checkbox">
+					<ul>
+						<li>
+							<input type="checkbox" name"test-checkbox" class="fui-checkbox" />
+							<label class="fui-checkbox-label">选项</label>
+						</li>
+						<li>
+							<input type="checkbox" name"test-checkbox" class="fui-checkbox" />
+							<label class="fui-checkbox-label">选项</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t">
+					<span class="icon-must">输入框：</span>
+				</div>
+				<div class="fui-d">
+					<input class="fui-text fui-text-s" name="" />
+					<a href="#" target="_self" class="fui-btn fui-btn-s">按钮</a>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t fui-t-l">
+					<span class="icon-must">输入框：</span>
+				</div>
+				<div class="fui-d">
+					<input class="fui-text" name="" />
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t">
+					<span class="icon-must">单选项：</span>
+				</div>
+				<div class="fui-d">
+					<input type="text" readonly="readonly" class="fui-text fui-text-s fui-text-calendar" data-min-date="2011-09-07" data-max-date="2013-12-21" value="">
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t fui-t-l">
+					<span class="icon-must">单选项：</span>
+				</div>
+				<div class="fui-d">
+					<input type="text" readonly="readonly" class="fui-text fui-text-calendar" data-min-date="2011-09-07" data-max-date="2013-12-21" value="">
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t fui-t-l">
+					<span class="icon-must">下拉框：</span>
+				</div>
+				<div class="fui-d fui-form-checkbox">
+					<textarea class="fui-form-textarea">我是默认文本</textarea>
+					<p><span>80</span>/1000</p>
+				</div>
+			</div>
+		</div>
+		<div class="combobox">
+			<select name="aaa">
+				<option value="1">111</option>
+				<option value="2" selected="selected">222</option>
+				<option value="3">333</option>
+				<option value="4">444</option>
+			</select>
+		</div>
+<script>
+!(function($){
+	$.use('ui-combobox, util-debug', function(){	
+		$('div.combobox').combobox({
+			data: $('select'),
+			editable: true,
+			change: function(){
+				console.info($(this).combobox('val'));
+			}
+		});
+	});
+})(jQuery);
+</script>
+		
+    </body>
+</html>
+
+

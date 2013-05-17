@@ -1419,7 +1419,7 @@ a.fui-btn-notxt {
 * @date 2013-04-22
 */
 .fui-text {
-  border: solid 1px #a0a0a0;
+  border: solid 1px #b7b7b7;
   height: 18px;
   width: 140px;
   padding: 3px 4px;
@@ -1436,14 +1436,18 @@ a.fui-btn-notxt {
   box-shadow: 0 0 2px #6482b9;
 }
 .fui-text-s {
-  padding: 1px 2px;
+  padding: 1px 4px;
   width: 126px;
-  background-position: 96px -69px;
+  background-position: 99px -70px;
+}
+.fui-text-disable {
+  border: 1px solid #dedede;
+  background-color: #f0f0f0;
 }
 .fui-text-error {
   border-color: #ffbb48;
   background-color: #ffffff;
-  box-shadow: 0px 0px 2px #ffdca3;
+  box-shadow: 0px 0px 2px #ffbb48;
 }
 .fui-text-calendar {
   width: 112px;
@@ -1930,4 +1934,185 @@ a.fui-btn-notxt {
   background-color: #4d6da1;
   overflow: hidden;
   margin: 8px 7px 0 0;
+}
+/**
+* @file fui-form.less
+* @brief 
+* @author yefniu, yefei.niuyf@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-16
+*/
+.fui-form {
+  zoom: 1;
+  padding: 3px 0;
+}
+.fui-form:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+}
+.fui-form .fui-t,
+.fui-form .fui-d {
+  float: left;
+}
+.fui-form .fui-t {
+  width: 140px;
+  text-align: right;
+  line-height: 20px;
+}
+.fui-form .fui-t-l {
+  line-height: 24px;
+}
+.fui-form .fui-d {
+  padding-left: 4px;
+}
+.fui-form li {
+  float: left;
+}
+.fui-form .icon-must {
+  padding-left: 10px;
+  background: url("http://img.china.alibaba.com/cms/upload/2013/308/213/1312803_681975369.png") no-repeat;
+  background-position: 0 -457px;
+}
+.fui-form-radio .fui-radio {
+  float: left;
+  margin: 2px 4px 0px 0px;
+}
+.fui-form-radio .fui-radio-label {
+  float: left;
+  word-break: break-all;
+  margin-right: 30px;
+}
+.fui-form-checkbox .fui-checkbox {
+  float: left;
+  margin: 3px 4px 0px 0px;
+}
+.fui-form-checkbox .fui-checkbox-label {
+  float: left;
+  word-break: break-all;
+  margin-right: 30px;
+}
+.fui-form-textarea {
+  padding: 8px;
+  border: 1px solid #b7b7b7;
+  box-shadow: inset 0 1px 1px #e6e6e6;
+  color: #888;
+}
+.ui-combobox {
+  zoom: 1;
+}
+.ui-combobox:after {
+  clear: both;
+  content: "\0020";
+  display: block;
+  height: 0;
+}
+.ui-combobox .result {
+  _height: 18px;
+  background: #ffffff url(http://img.china.alibaba.com/images/common/icon_v02/bg5.gif) repeat-x;
+  border: solid 1px #a2a9af;
+  float: left;
+  line-height: 16px;
+  min-height: 18px;
+  padding: 2px;
+  padding-bottom: 0;
+  width: 120px;
+  zoom: 1;
+}
+.ui-combobox .result li {
+  _overflow: hidden;
+  background-color: #efefef;
+  border: solid 1px #c0c3c3;
+  cursor: default;
+  float: left;
+  height: 14px;
+  line-height: 14px;
+  margin: 0 2px 2px 0;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+.ui-combobox .result a {
+  background: url(http://img.china.alibaba.com/cms/upload/2011/752/152/251257_548721671.gif) no-repeat;
+  display: inline-block;
+  font-size: 1;
+  height: 12px;
+  line-height: 12px;
+  margin-left: 2px;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 15px;
+}
+.ui-combobox .result a:hover {
+  background-position: 0 -12px;
+}
+.ui-combobox a.trigger {
+  background: url(http://img.china.alibaba.com/images/common/icon_v02/trigger1.gif) no-repeat;
+  border-bottom: solid 1px #b5b8c8;
+  display: block;
+  float: left;
+  height: 21px;
+  width: 17px;
+}
+.ui-combobox a.trigger:hover {
+  background-position: -17px 0;
+}
+.ui-combobox a.trigger:active {
+  background-position: -34px 0;
+}
+.ui-combobox-panel {
+  background-color: #FFF;
+  border: solid 1px #a3a7a8;
+  overflow: hidden;
+  position: absolute;
+  top: 22px;
+}
+.ui-combobox-panel a.close {
+  background: url(http://img.china.alibaba.com/images/common/icon_v02/close3.gif) no-repeat;
+  display: block;
+  font-size: 1px;
+  height: 13px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 13px;
+}
+.ui-combobox-panel a.close:hover {
+  background-position: 0 -13px;
+}
+.ui-combobox-panel .list {
+  clear: both;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 120px;
+}
+.ui-combobox-item {
+  _display: inline-block;
+  cursor: pointer;
+  overflow-y: hidden;
+  padding: 2px;
+  width: auto;
+}
+.ui-combobox-item input {
+  margin: 0 2px;
+  vertical-align: -2px;
+}
+.ui-combobox-selected,
+.ui-combobox-hover {
+  background-color: #39F;
+  color: #FFF;
+}
+.ui-combobox-disabled a.trigger {
+  background-position: -68px 0 !important;
+  cursor: default!important;
+}
+.ui-combobox-disabled .result {
+  border-color: #cbcbcb!important;
+}
+.ui-combobox-disabled .result li {
+  border-color: #cbcbcb!important;
+  color: #ccc!important;
+}
+.ui-combobox-disabled .result a {
+  background-position: 0 -24px !important;
 }

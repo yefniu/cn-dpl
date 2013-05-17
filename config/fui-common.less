@@ -1,0 +1,64 @@
+
+/* common */
+@DefaultFontColor: #444;
+@DefaultFontColor2: #333;
+@HelpFontColor: #888;
+@ImportantFontColor: #ff7300;
+@ImportantFontColor2: #cc0000;
+@LinkFontColor: #1e50a2;
+@LinkFontColor2: #225588;
+@LinkHoverColor: #ff7300;
+
+@fuiSpriteUrl:url(http://img.china.alibaba.com/cms/upload/2013/807/492/1294708_681975369.png) no-repeat;
+
+
+.linear-graident(@colorStart, @colorEnd){
+    background-color: (@colorEnd + @colorStart) / 2;
+    background-image: -moz-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -ms-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@colorStart), to(@colorEnd));
+    background-image: -webkit-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: -o-linear-gradient(top, @colorStart, @colorEnd);
+    background-image: linear-gradient(top, @colorStart, @colorEnd);
+}
+
+.clearFloat(){ 
+    zoom:1;
+    &:after{
+        clear: both;
+        content: " ";
+        display: block;
+        height: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -23,6 +23,7 @@
 /* text */
 /* tip */
 /* title */
+/* table */
 /**
 * @file fui-icon.less
 * @brief
@@ -1908,4 +1909,87 @@ a.fui-btn-notxt {
   background-color: #4d6da1;
   overflow: hidden;
   margin: 8px 7px 0 0;
+}
+/**
+* @file fui-table.less
+* @brief
+* @author terence.wangt@alibaba-inc.com
+* @version 1.0.0
+* @date 2013-05-17
+*/
+.fui-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #444;
+}
+.fui-table th,
+.fui-table td {
+  border: solid 1px #dcdcdc;
+  height: 18px;
+  padding: 3px 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+.fui-table th {
+  background-color: #f0f0f0;
+}
+.fui-table .fui-a-l {
+  text-align: left;
+}
+.fui-table .fui-a-r {
+  text-align: right;
+}
+.fui-table .fui-a-c {
+  text-align: center;
+}
+.fui-table .fui-odd td {
+  background-color: #f3f3f3;
+}
+.fui-table-align-left th,
+.fui-table-align-left td {
+  text-align: left;
+}
+.fui-table-align-right th,
+.fui-table-align-right td {
+  text-align: right;
+}
+.fui-table-hover tr:hover td {
+  background-color: #fafafa;
+}
+.fui-table-s th,
+.fui-table-s td {
+  padding: 1px 2px;
+}
+.fui-table-l th,
+.fui-table-l td {
+  padding: 5px 2px;
+}
+.fui-table-striped th,
+.fui-table-striped td {
+  border-width: 1px 0;
+}
+.fui-table-action th,
+.fui-table-action td {
+  border-width: 1px 0;
+  padding: 8px;
+  text-align: left;
+}
+.fui-table-action .fui-img {
+  padding: 8px 12px;
+  width: 64px;
+}
+.fui-table-action .fui-img img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.fui-table-action .fui-txt {
+  vertical-align: top;
+}
+.fui-table-action .fui-act {
+  padding: 8px 12px;
+  text-align: right;
+  white-space: nowrap;
 }

@@ -6,6 +6,9 @@
 * @date 2013-04-22
 */
 
+.fui-text-calendar {
+	background: @fuiSpriteUrl;
+}
 
 .fui-text {
 	border:solid 1px @textBorderColor;
@@ -13,10 +16,10 @@
 	width: @textWidth;
 	padding:3px 4px;
 	background-color:@textBgColor;
-	background-position: 98px -67px; 
 	overflow:auto;
 	vertical-align:middle;
 	color:#444;
+	background-position: 98px -67px; 
 	box-shadow:inset 0 1px 1px #e6e6e6;
 	&:focus{
 		border-color:@textFocusBorderColor;
@@ -38,9 +41,8 @@
 	background-color:@textErrorBgColor;
 	box-shadow: 0px 0px 2px @textErrorShadowColor;
 }
+
 .fui-text-calendar {
 	width:112px;
 	cursor:pointer;
 }
-
-

@@ -5,7 +5,9 @@
         <title>DPL</title>
         <link rel="stylesheet" rev="stylesheet" href="../widget/reset.css" />
   		<link rel="stylesheet" rev="stylesheet" href="../export/front/fui.css" />
-		<script src="http://wd.alibaba-inc.com/fdevlib/static/js/merge-fdev4.js"></script>
+		<script src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/core/fdev-min.js"></script>
+		
+		
 		
         <base target="_blank"></base>
     </head>
@@ -37,11 +39,11 @@
 				</div>
 				<div class="fui-d fui-form-radio">
 					<ul>
-						<li>
+						<li class="fui-list">
 							<input type="radio" name"test-radio" class="fui-radio" />
 							<label class="fui-radio-label">选项</label>
 						</li>
-						<li>
+						<li class="fui-list">
 							<input type="radio" name"test-radio" class="fui-radio" />
 							<label class="fui-radio-label">选项</label>
 						</li>
@@ -56,11 +58,11 @@
 				</div>
 				<div class="fui-d fui-form-checkbox">
 					<ul>
-						<li>
+						<li class="fui-list">
 							<input type="checkbox" name"test-checkbox" class="fui-checkbox" />
 							<label class="fui-checkbox-label">选项</label>
 						</li>
-						<li>
+						<li class="fui-list">
 							<input type="checkbox" name"test-checkbox" class="fui-checkbox" />
 							<label class="fui-checkbox-label">选项</label>
 						</li>
@@ -112,22 +114,54 @@
 		<div style="margin-top:10px">
 			<div class="fui-form">
 				<div class="fui-t fui-t-l">
-					<span class="icon-must">下拉框：</span>
+					<span class="icon-must">文本域：</span>
 				</div>
-				<div class="fui-d fui-form-checkbox">
-					<textarea class="fui-form-textarea">我是默认文本</textarea>
-					<p><span>80</span>/1000</p>
+				<div class="fui-d fui-form-textarea">
+					<textarea>我是默认文本</textarea>
+					<p>
+						<div class="fui-word-count"><span class="fui-word-have">80</span>/1000</div>
+					</p>
 				</div>
 			</div>
 		</div>
-		<div class="combobox">
-			<select name="aaa">
-				<option value="1">111</option>
-				<option value="2" selected="selected">222</option>
-				<option value="3">333</option>
-				<option value="4">444</option>
-			</select>
+		<div style="margin-top:10px">
+			<div class="fui-form">
+				<div class="fui-t">
+					<span class="icon-must">下拉框：</span>
+				</div>
+				<div class="fui-d">
+					<div class="combobox">
+						<select name="aaa">
+							<option value="1">111</option>
+							<option value="2" selected="selected">222</option>
+							<option value="3">333</option>
+							<option value="4">444</option>
+						</select>
+					</div>
+				</div>
+			</div>
 		</div>
+		
+		<div style="margin-top:10px">
+			<div class="fui-form-count">
+				<a rel="nofollow" title="减一" href="#" class="d-amount-down">－</a>
+				<div class="d-count-inputbox">
+					<input type="text" maxlength="10" class="d-count-input" />
+				</div>
+				<a rel="nofollow" title="加一" href="#" class="d-amount-up">+</a>
+			</div>
+		</div>
+		<div style="margin-top:10px">
+			<div class="fui-form-count fui-form-count-s">
+				<a rel="nofollow" title="减一" href="#" class="d-amount-down">－</a>
+				<div class="d-count-inputbox">
+					<input type="text" maxlength="10" class="d-count-input" />
+				</div>
+				<a rel="nofollow" title="加一" href="#" class="d-amount-up">+</a>
+			</div>
+		</div>
+		<script src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/widget/ui/core-min.js?v=1.1></script>
+		<script src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/widget/ui/combobox.js?v=1.0"></script>
 <script>
 !(function($){
 	$.use('ui-combobox, util-debug', function(){	

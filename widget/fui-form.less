@@ -23,7 +23,7 @@
 	.fui-d{
 		padding-left: 4px;
 	}
-	li{
+	.fui-list{
 		float: left;
 	}
 	.icon-must{
@@ -55,8 +55,66 @@
 	}
 }
 .fui-form-textarea{
-	padding:8px;
-	border: 1px solid #b7b7b7;
-	box-shadow:inset 0 1px 1px #e6e6e6;
-	color:#888;
+	textarea{
+		padding:8px;
+		border: 1px solid #b7b7b7;
+		box-shadow:inset 0 1px 1px #e6e6e6;
+		color:#888;
+	}
+	.fui-word-count{
+		float:right;
+	}
+	.fui-word-have{
+		color:@ImportantFontColor;
+	}
+}
+.fui-form-count{
+	.d-amount-up,.d-amount-down{
+		background-color: #fff;
+		border: 1px solid #ccc;
+		color: #666;
+		display: inline-block;
+		float: left;
+		height: 12px;
+		line-height: 10px;
+		margin-top: 5px;
+		text-decoration: none;
+		width: 12px;
+		&:hover{
+			color:@ImportantFontColor;
+		}
+	}
+	.d-amount-up{
+		width:8px;
+		padding:0 2px;
+	}
+	.d-amount-disable{
+		color:#e6e6e6;
+		border-color:#e6e6e6;
+	}
+	.d-count-inputbox{
+		display: inline-block;
+		float: left;
+		width: 72px;
+		height: 22px;
+		.d-count-input{
+			width: 54px;
+			height: 20px;
+			margin: 0px 4px;
+			padding:2px 4px;
+			border: 1px solid #b7b7b7;
+			text-align: right;
+		}
+	}
+}
+.fui-form-count-s{
+	.d-amount-up,.d-amount-down{
+		margin-top: 4px;
+	}
+	.d-count-inputbox{
+		height:18px;
+		.d-count-input{
+			height:16px;
+		}
+	}
 }

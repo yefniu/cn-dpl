@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="gbk"/>
+        <title>DPL</title>
+        <link rel="stylesheet" rev="stylesheet" href="../widget/reset.css" />
+  		<link rel="stylesheet" rev="stylesheet" href="../export/front/fui.css" />
+        <base target="_blank"></base>
+    </head>
+    <body>		
+		<div id="loading" class="fui-loading" >				
+			<i class="fui-ico"></i>
+			<span class="fui-txt">提示信息…</span>
+		</div>
+		<button type="button" class="fui-btn" id="btn-show-loading" style="margin-top: 8px;">show loading L</button>
+
+		<div id="loading-part" class="fui-loading fui-loading-part">				
+			<i class="fui-ico"></i>
+			<span class="fui-txt">提示信息…</span>
+		</div>
+		<button type="button" class="fui-btn" id="btn-show-loading-part" style="margin-top: 8px;">show loading S</button>
+		<script type="text/javascript" src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/core/fdev-min.js"></script>
+        <script type="text/javascript">        	
+			(function($, D){
+				$(D).ready(function(){
+					
+					/* dialog 详细参考 fdev4 浮层组件 */
+					$.use('ui-core,ui-dialog', function(){
+											
+	                    var loading = $('#loading');
+	                    $('#btn-show-loading').click(function(){
+							loading.dialog({
+	                            modalCss: {
+	                                backgroundColor: '#fff'
+	                            },
+	                            fadeOut: 200,
+	                            timeout: 1000,
+	                            shim: true,
+	                            center: true
+	                        });
+	                        
+	                    });
+						var loadings = $('#loading-part');
+	                    $('#btn-show-loading-part').click(function(){
+							loadings.dialog({
+	                            modalCss: {
+	                                backgroundColor: '#fff'
+	                            },
+	                            fadeOut: 200,
+	                            timeout: 1000,
+	                            shim: true,
+	                            center: true
+	                        });
+	                        
+	                    });
+	                });	   	       
+					
+				});
+			})(jQuery, document);			
+        </script>
+		
+    </body>
+</html>

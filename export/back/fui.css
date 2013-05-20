@@ -1132,6 +1132,9 @@ a.fui-btn-notxt {
   color: #5a5a5a;
   text-decoration: none;
 }
+.fui-tab .fui-tab-t a:hover {
+  background-color: #F9F9F9;
+}
 .fui-tab .fui-tab-current {
   border: 1px solid #a0a0a0;
   border-width: 2px 1px 0;
@@ -1141,7 +1144,7 @@ a.fui-btn-notxt {
 }
 .fui-tab .fui-tab-current a:link,
 .fui-tab .fui-tab-current a:visited,
-.fui-tab .fui-tab-current ahover {
+.fui-tab .fui-tab-current a:hover {
   padding: 3px 13px 2px;
   margin-top: 0;
   background-color: #FFF;
@@ -1197,13 +1200,16 @@ a.fui-btn-notxt {
 .fui-tab-pink .fui-tab-t a:hover {
   background-color: #FBF3EE;
 }
+.fui-tab-pink .fui-tab-t a:hover {
+  background-color: #FFFAF7;
+}
 .fui-tab-pink .fui-tab-current {
   border: 1px solid #A04B23;
   border-bottom-width: 0;
 }
 .fui-tab-pink .fui-tab-current a:link,
 .fui-tab-pink .fui-tab-current a:visited,
-.fui-tab-pink .fui-tab-current ahover {
+.fui-tab-pink .fui-tab-current a:hover {
   background-color: #FFF;
   color: #444;
 }

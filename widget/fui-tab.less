@@ -39,7 +39,15 @@
 				background-color: @tabHeaderBgColor;
 				color: @tabHeaderFontColor;
 				text-decoration: none;
+
 			}
+			&:hover{
+				background-color: #F9F9F9;	
+			}
+		}
+
+		&:hover{
+			
 		}
 	}
 	.fui-tab-current{
@@ -49,7 +57,7 @@
 		margin-left: @tabHeaderCurrentMarginLeft;
 		height: @tabHeaderHeight - 1;
 		a{
-			&:link,&:visited,&hover{
+			&:link,&:visited,&:hover{
 				padding: 3px 13px 2px;
 				margin-top: 0;
 				background-color: #FFF;
@@ -120,13 +128,17 @@
 			&:link,&:visited,&:hover{
 				background-color: #FBF3EE;
 			}
+			&:hover{
+				background-color: #FFFAF7;	
+			}
 		}
+		
 	}
 	.fui-tab-current{
 		border: 1px solid #A04B23;
 		border-bottom-width: 0;
 		a{
-			&:link,&:visited,&hover{
+			&:link,&:visited,&:hover{
 				background-color: #FFF;
 				color: #444;
 			}

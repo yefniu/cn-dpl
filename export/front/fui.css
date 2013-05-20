@@ -374,20 +374,20 @@ a.alitalk-off {
 .fui-btn-hint,
 .fui-btn-disabled {
   display: inline-block;
-  border: 1px solid #b3b3b3;
-  border-bottom-color: #9a9a9a;
+  border: 1px solid #c9c9c9;
+  border-bottom-color: #c9c9c9;
   padding: 3px 13px;
   color: #444444;
   vertical-align: middle;
   cursor: pointer;
   overflow: visible;
-  background-color: #f0f0f0;
-  background-image: -moz-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: -ms-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), to(#e4e4e4));
-  background-image: -webkit-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: -o-linear-gradient(top, #fcfcfc, #e4e4e4);
-  background-image: linear-gradient(top, #fcfcfc, #e4e4e4);
+  background-color: #f6f6f6;
+  background-image: -moz-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: -ms-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: -o-linear-gradient(top, #fafafa, #f2f2f2);
+  background-image: linear-gradient(top, #fafafa, #f2f2f2);
   border-radius: 3px;
   *padding: 0 12px;
   *height: 26px;
@@ -416,24 +416,24 @@ a.alitalk-off {
 .fui-btn:hover {
   color: #444444;
   text-decoration: none;
-  background-color: #dbdbdb;
-  background-image: -moz-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#cfcfcf));
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: -o-linear-gradient(top, #e6e6e6, #cfcfcf);
-  background-image: linear-gradient(top, #e6e6e6, #cfcfcf);
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f3f3f3, #efefef);
+  background-image: -ms-linear-gradient(top, #f3f3f3, #efefef);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#efefef));
+  background-image: -webkit-linear-gradient(top, #f3f3f3, #efefef);
+  background-image: -o-linear-gradient(top, #f3f3f3, #efefef);
+  background-image: linear-gradient(top, #f3f3f3, #efefef);
 }
 .fui-btn:active {
   color: #505050;
   text-decoration: none;
-  background-color: #d5d5d5;
-  background-image: -moz-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: -ms-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cecece), to(#dcdcdc));
-  background-image: -webkit-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: -o-linear-gradient(top, #cecece, #dcdcdc);
-  background-image: linear-gradient(top, #cecece, #dcdcdc);
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#efefef), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: -o-linear-gradient(top, #efefef, #f3f3f3);
+  background-image: linear-gradient(top, #efefef, #f3f3f3);
 }
 .fui-btn-action {
   border: solid 1px #2590ea;
@@ -535,7 +535,7 @@ a.alitalk-off {
 .fui-btn-disabled:hover,
 .fui-btn-disabled:active {
   border: solid 1px #dddddd;
-  border-bottom-color: #d3d3d3;
+  border-bottom-color: #dddddd;
   color: #c8c8c8;
   text-decoration: none;
   cursor: default;
@@ -1211,6 +1211,9 @@ a.fui-btn-notxt {
   color: #5a5a5a;
   text-decoration: none;
 }
+.fui-tab .fui-tab-t a:hover {
+  background-color: #F9F9F9;
+}
 .fui-tab .fui-tab-current {
   border: 1px solid #a0a0a0;
   border-width: 1px 1px 0;
@@ -1220,7 +1223,7 @@ a.fui-btn-notxt {
 }
 .fui-tab .fui-tab-current a:link,
 .fui-tab .fui-tab-current a:visited,
-.fui-tab .fui-tab-current ahover {
+.fui-tab .fui-tab-current a:hover {
   padding: 3px 13px 2px;
   margin-top: 0;
   background-color: #FFF;
@@ -1276,13 +1279,16 @@ a.fui-btn-notxt {
 .fui-tab-pink .fui-tab-t a:hover {
   background-color: #FBF3EE;
 }
+.fui-tab-pink .fui-tab-t a:hover {
+  background-color: #FFFAF7;
+}
 .fui-tab-pink .fui-tab-current {
   border: 1px solid #A04B23;
   border-bottom-width: 0;
 }
 .fui-tab-pink .fui-tab-current a:link,
 .fui-tab-pink .fui-tab-current a:visited,
-.fui-tab-pink .fui-tab-current ahover {
+.fui-tab-pink .fui-tab-current a:hover {
   background-color: #FFF;
   color: #444;
 }

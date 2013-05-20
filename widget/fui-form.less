@@ -36,6 +36,7 @@
 	.fui-radio{
 		float: left;
 		margin: 2px 4px 0px 0px;
+		*margin-top:-2px;
 	}
 	.fui-radio-label{
 		float: left;
@@ -47,6 +48,7 @@
 	.fui-checkbox{
 		float: left;
 		margin: 3px 4px 0px 0px;
+		*margin-top:-2px;
 	}
 	.fui-checkbox-label{
 		float: left;
@@ -62,59 +64,95 @@
 		color:#888;
 	}
 	.fui-word-count{
+		margin-top:3px;
 		float:right;
 	}
 	.fui-word-have{
 		color:@ImportantFontColor;
 	}
 }
-.fui-form-count{
-	.d-amount-up,.d-amount-down{
-		background-color: #fff;
-		border: 1px solid #ccc;
-		color: #666;
-		display: inline-block;
+.fui-ajust{
+	.fui-result{
+		_height: 18px;
+		border: solid 1px #b7b7b7;
+		border-right: none;
 		float: left;
-		height: 12px;
-		line-height: 10px;
-		margin-top: 5px;
-		text-decoration: none;
-		width: 12px;
-		&:hover{
-			color:@ImportantFontColor;
+		line-height: 18px;
+		min-height: 18px;
+		padding: 2px 2px 2px 4px;
+		padding-bottom: 0;
+		width: 50px;
+		box-shadow: inset 0 1px 1px #e6e6e6;
+		zoom: 1;
+	}
+	.fui-operation{
+	    border: solid 1px #b7b7b7;
+	    border-left: none;
+	    display: block;
+	    float: left;
+	    height: 18px;
+	    width: 17px;
+		padding:1px;
+		.fui-up,.fui-down{
+			border:1px solid #ccc;
+			width:15px;
+			height:7px;
+			float:left;
+			font-size:0;
+			background:@fuiSpriteUrl;
 		}
-	}
-	.d-amount-up{
-		width:8px;
-		padding:0 2px;
-	}
-	.d-amount-disable{
-		color:#e6e6e6;
-		border-color:#e6e6e6;
-	}
-	.d-count-inputbox{
-		display: inline-block;
-		float: left;
-		width: 72px;
-		height: 22px;
-		.d-count-input{
-			width: 54px;
-			height: 20px;
-			margin: 0px 4px;
-			padding:2px 4px;
-			border: 1px solid #b7b7b7;
-			text-align: right;
+		.fui-up{
+			background-position:0 -581px;
+			&:hover{
+				background-position:-80px -581px;
+			}
+		}
+		.fui-down{
+			background-position:-20px -581px;
+			&:hover{
+				background-position:-100px -581px;
+			}
+		}
+		.fui-up-disable,.fui-down-disable{
+			border:1px solid #e6e6e6;
+			cursor:default;
+		}
+		.fui-up-disable,.fui-up-disable:hover{
+			background-position:-40px -581px;
+		}
+		.fui-down-disable,.fui-down-disable:hover{
+			background-position:-60px -581px;
 		}
 	}
 }
-.fui-form-count-s{
-	.d-amount-up,.d-amount-down{
-		margin-top: 4px;
+.fui-ajust-l{
+	.fui-result{
+		_height:22px;
+		min-height:22px;
 	}
-	.d-count-inputbox{
-		height:18px;
-		.d-count-input{
-			height:16px;
+	.fui-operation{
+		height:22px;
+		.fui-up,.fui-down{
+			height:9px;
 		}
+		.fui-up{
+			background-position:0 -580px;
+			&:hover{
+				background-position:-80px -580px;
+			}
+		}
+		.fui-down{
+			background-position:-20px -580px;
+			&:hover{
+				background-position:-100px -580px;
+			}
+		}
+		.fui-up-disable,.fui-up-disable:hover{
+			background-position:-40px -580px;
+		}
+		.fui-down-disable,.fui-down-disable:hover{
+			background-position:-60px -580px;
+		}
+
 	}
 }

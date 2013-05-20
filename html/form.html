@@ -5,6 +5,7 @@
         <title>DPL</title>
         <link rel="stylesheet" rev="stylesheet" href="../widget/reset.css" />
   		<link rel="stylesheet" rev="stylesheet" href="../export/front/fui.css" />
+		<link rel="stylesheet" rev="stylesheet" href="http://style.china.alibaba.com/fdevlib/css/fdev-v4/core/fdev-float.css" />
 		<script src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/core/fdev-min.js"></script>
 		
 		
@@ -97,7 +98,7 @@
 					<span class="icon-must">单选项：</span>
 				</div>
 				<div class="fui-d">
-					<input type="text" readonly="readonly" class="fui-text fui-text-s fui-text-calendar" data-min-date="2011-09-07" data-max-date="2013-12-21" value="">
+					<input type="text" readonly="readonly" class="fui-text fui-text-s fui-text-calendar fui-text-calendar1" data-min-date="2011-09-07" data-max-date="2013-12-21" value="">
 				</div>
 			</div>
 		</div>
@@ -107,7 +108,7 @@
 					<span class="icon-must">单选项：</span>
 				</div>
 				<div class="fui-d">
-					<input type="text" readonly="readonly" class="fui-text fui-text-calendar" data-min-date="2011-09-07" data-max-date="2013-12-21" value="">
+					<input type="text" readonly="readonly" class="fui-text fui-text-calendar fui-text-calendar2" data-min-date="2011-09-07" data-max-date="2013-12-21" value="">
 				</div>
 			</div>
 		</div>
@@ -116,10 +117,12 @@
 				<div class="fui-t fui-t-l">
 					<span class="icon-must">文本域：</span>
 				</div>
-				<div class="fui-d fui-form-textarea">
-					<textarea>我是默认文本</textarea>
-					<p>
-						<div class="fui-word-count"><span class="fui-word-have">80</span>/1000</div>
+				<div class="fui-d fui-form-textarea" placeholder="我是默认文本">
+					<textarea style="height:85px;width:485px"></textarea>
+					<p class="fd-clr">
+						<div class="fui-word-count">
+							<span class="fui-word-have">80</span>/1000
+						</div>
 					</p>
 				</div>
 			</div>
@@ -130,7 +133,7 @@
 					<span class="icon-must">下拉框：</span>
 				</div>
 				<div class="fui-d">
-					<div class="combobox">
+					<div class="combobox fui-combobox-l">
 						<select name="aaa">
 							<option value="1">111</option>
 							<option value="2" selected="selected">222</option>
@@ -141,27 +144,93 @@
 				</div>
 			</div>
 		</div>
-		
-		<div style="margin-top:10px">
-			<div class="fui-form-count">
-				<a rel="nofollow" title="减一" href="#" class="d-amount-down">－</a>
-				<div class="d-count-inputbox">
-					<input type="text" maxlength="10" class="d-count-input" />
+		<div style="margin-top:10px" id="fui-ajust">
+			<div class="fui-form">
+				<div class="fui-t">
+					<span class="icon-must">微调控件：</span>
 				</div>
-				<a rel="nofollow" title="加一" href="#" class="d-amount-up">+</a>
+				<div class="fui-d">
+					<div class="fui-ajust">
+						<input class="fui-result" type="text" autocomplete="off" maxlength="50">
+						<div class="fui-operation">
+							<a href="#" class="fui-up"></a>
+							<a href="#" class="fui-down"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div style="margin-top:10px">
-			<div class="fui-form-count fui-form-count-s">
-				<a rel="nofollow" title="减一" href="#" class="d-amount-down">－</a>
-				<div class="d-count-inputbox">
-					<input type="text" maxlength="10" class="d-count-input" />
+			<div class="fui-form">
+				<div class="fui-t fui-t-l">
+					<span class="icon-must">微调控件：</span>
 				</div>
-				<a rel="nofollow" title="加一" href="#" class="d-amount-up">+</a>
+				<div class="fui-d">
+					<div class="fui-ajust fui-ajust-l">
+						<input class="fui-result" type="text" autocomplete="off" maxlength="50">
+						<div class="fui-operation">
+							<a href="#" class="fui-up"></a>
+							<a href="#" class="fui-down"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
 		<script src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/widget/ui/core-min.js?v=1.1></script>
 		<script src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/widget/ui/combobox.js?v=1.0"></script>
+ <script type="text/javascript">        	
+	(function($, D){
+		$(D).ready(function(){
+			
+			$('input.fui-text-calendar1').click(function(){
+				var self = $(this);
+				$.use('ui-datepicker, util-date', function(){
+					self.datepicker({
+						closable:true,
+						triggerType: 'focus',
+						pages: 1,
+						shim: true,
+						minDate: Date.parseDate(self.data('minDate')),
+						maxDate: Date.parseDate(self.data('maxDate')),
+						beforeShow: function(){
+							$(this).datepicker('setOption', 'selected', Date.parseDate(this.value));
+						},
+						select: function(e, ui){
+							$(this).val(ui.date.format('yyyy-MM-dd'));
+						}/*,
+						timeSelect: function(e, ui){
+							$(this).val(ui.date.format('yyyy-MM-dd')).datepicker('hide');
+						}*/
+					}).triggerHandler('focus');
+				}, {css: ["../widget/fui-calendar.css"]});	                    
+			});
+			$('input.fui-text-calendar2').click(function(){
+				var self = $(this);
+				$.use('ui-datepicker, util-date', function(){
+					self.datepicker({
+						closable:true,
+						triggerType: 'focus',
+						pages: 1,
+						shim: true,
+						minDate: Date.parseDate(self.data('minDate')),
+						maxDate: Date.parseDate(self.data('maxDate')),
+						beforeShow: function(){
+							$(this).datepicker('setOption', 'selected', Date.parseDate(this.value));
+						},
+						select: function(e, ui){
+							$(this).val(ui.date.format('yyyy-MM-dd'));
+						}/*,
+						timeSelect: function(e, ui){
+							$(this).val(ui.date.format('yyyy-MM-dd')).datepicker('hide');
+						}*/
+					}).triggerHandler('focus');
+				}, {css: ["../widget/fui-calendar.css"]});	                    
+			});
+			
+		});
+	})(jQuery, document);			
+</script>
 <script>
 !(function($){
 	$.use('ui-combobox, util-debug', function(){	
@@ -173,6 +242,71 @@
 			}
 		});
 	});
+})(jQuery);
+</script>
+<script>
+!(function($){
+	var div = $('#fui-ajust .fui-ajust');
+
+	var ajust = {
+		
+		init: function() {
+			this.div = div;
+			this.result = $('input.fui-result', div);
+			this._initResult();
+			this._initEvent();
+
+		},
+
+		_initResult: function() {
+			if(!$.isNumeric(this.result.val())) {
+				this._setValue(0);
+			}
+
+		},
+
+		_initEvent: function() {
+			var self = this;
+
+			$('a.fui-up', this.div).on('click', function(e) {
+				e.preventDefault();
+
+				if($(this).hasClass('fui-up-disable')) {
+					return ;
+				}
+				var result = parseInt(self.result.val());
+				self._setValue(result + 1);
+			});
+
+			$('a.fui-down', this.div).on('click', function(e) {
+				e.preventDefault();
+
+				if($(this).hasClass('fui-down-disable')) {
+					return ;
+				}
+				var result = parseInt(self.result.val());
+				self._setValue(result - 1);
+			});
+
+			$('input.fui-result', this.div).on('keyup', function(e) {
+				var result = parseInt(self.result.val());
+				if(!$.isNumeric(result)) {
+					result = 0;
+				}
+				self._setValue(result);
+			});
+		},
+
+		_setValue: function(value) {
+			this.result.val(value);
+			if(value === 0) {
+				$('a.fui-down', this.div).addClass('fui-down-disable');
+			} else {
+				$('a.fui-down', this.div).removeClass('fui-down-disable');
+			}
+		}
+	}
+	ajust.init(div);
 })(jQuery);
 </script>
 		

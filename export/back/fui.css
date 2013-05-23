@@ -52,6 +52,8 @@ a.alitalk,
 .fui-ico-pay7,
 .fui-ico-payGuarantee,
 .fui-ico-goldSupplier,
+.fui-ico-goldBuyer,
+.fui-ico-silverBuyer,
 .fui-ico-alipay,
 .fui-ico-etc,
 .fui-ico-bank,
@@ -66,14 +68,101 @@ a.alitalk,
 .fui-ico-tradeMedal,
 .fui-ico-processing,
 .fui-ico-brand,
+.fui-ico-discount,
+.fui-ico-ensureCard,
+.fui-ico-vipSale,
+.fui-ico-winport,
+.fui-ico-delayPay,
+.fui-ico-orderList,
+.fui-ico-secret,
+.fui-ico-unsecret,
+.fui-ico-supplyerLevel-1,
+.fui-ico-supplyerLevel-2,
+.fui-ico-supplyerLevel-3,
+.fui-ico-buyerLevel-1,
+.fui-ico-buyerLevel-2,
+.fui-ico-buyerLevel-3,
+.fui-ico-mobileOrder,
+.fui-ico-stepPay,
 .fui-end {
-  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130523/icon.png) no-repeat 0 0;
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130524/icon.png) no-repeat 0 0;
   display: inline-block;
   height: 18px;
   width: 18px;
   line-height: 18px;
   vertical-align: middle;
   overflow: hidden;
+}
+/*�ۿ�*/
+.fui-ico-discount {
+  background-position: 0 -940px;
+  width: 30px;
+}
+/*���Ͽ�*/
+.fui-ico-ensureCard {
+  background-position: 0 -961px;
+  width: 54px;
+}
+/*vip����*/
+.fui-ico-vipSale {
+  background-position: 0 -983px;
+  width: 56px;
+}
+/*����*/
+.fui-ico-winport {
+  background-position: 0 -1006px;
+}
+/*�񵽸���*/
+.fui-ico-delayPay {
+  background-position: 0 -1028px;
+}
+/*������*/
+.fui-ico-orderList {
+  background-position: 0 -1049px;
+}
+/*����*/
+.fui-ico-secret {
+  background-position: 0 -1071px;
+}
+/*����*/
+.fui-ico-unsecret {
+  background-position: 0 -1093px;
+}
+/*��Ӧ�̵ȼ�1*/
+.fui-ico-supplyerLevel-1 {
+  background-position: 0 -1115px;
+}
+/*��Ӧ�̵ȼ�2*/
+.fui-ico-supplyerLevel-2 {
+  background-position: 0 -1139px;
+  width: 22px;
+}
+/*��Ӧ�̵ȼ�3*/
+.fui-ico-supplyerLevel-3 {
+  background-position: 0 -1161px;
+}
+/*�ɹ��̵ȼ�1*/
+.fui-ico-buyerLevel-1 {
+  background-position: 0 -1183px;
+}
+/*�ɹ��̵ȼ�2*/
+.fui-ico-buyerLevel-2 {
+  background-position: 0 -1206px;
+  width: 22px;
+}
+/*�ɹ��̵ȼ�3*/
+.fui-ico-buyerLevel-3 {
+  background-position: 0 -1228px;
+}
+/*�ֻ�����*/
+.fui-ico-mobileOrder {
+  background-position: 0 -1248px;
+  width: 48px;
+}
+/*�ֽ׶θ���*/
+.fui-ico-stepPay {
+  background-position: 0 -1272px;
+  width: 56px;
 }
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -163,7 +252,14 @@ a.alitalk-off {
 /* ���ƹ�Ӧ�� */
 .fui-ico-goldSupplier {
   background-position: 0 -889px;
-  vertical-align: middle;
+}
+/* ���Ʋɹ��� */
+.fui-ico-goldBuyer {
+  background-position: 0 -916px;
+}
+/* ���Ʋɹ��� */
+.fui-ico-silverBuyer {
+  background-position: 0 -863px;
 }
 /* ֧���� */
 .fui-ico-alipay {
@@ -2182,6 +2278,8 @@ a.alitalk,
 .fui-ico-pay7,
 .fui-ico-payGuarantee,
 .fui-ico-goldSupplier,
+.fui-ico-goldBuyer,
+.fui-ico-silverBuyer,
 .fui-ico-alipay,
 .fui-ico-etc,
 .fui-ico-bank,
@@ -2196,14 +2294,101 @@ a.alitalk,
 .fui-ico-tradeMedal,
 .fui-ico-processing,
 .fui-ico-brand,
+.fui-ico-discount,
+.fui-ico-ensureCard,
+.fui-ico-vipSale,
+.fui-ico-winport,
+.fui-ico-delayPay,
+.fui-ico-orderList,
+.fui-ico-secret,
+.fui-ico-unsecret,
+.fui-ico-supplyerLevel-1,
+.fui-ico-supplyerLevel-2,
+.fui-ico-supplyerLevel-3,
+.fui-ico-buyerLevel-1,
+.fui-ico-buyerLevel-2,
+.fui-ico-buyerLevel-3,
+.fui-ico-mobileOrder,
+.fui-ico-stepPay,
 .fui-end {
-  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130523/icon.png) no-repeat 0 0;
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130524/icon.png) no-repeat 0 0;
   display: inline-block;
   height: 18px;
   width: 18px;
   line-height: 18px;
   vertical-align: middle;
   overflow: hidden;
+}
+/*�ۿ�*/
+.fui-ico-discount {
+  background-position: 0 -940px;
+  width: 30px;
+}
+/*���Ͽ�*/
+.fui-ico-ensureCard {
+  background-position: 0 -961px;
+  width: 54px;
+}
+/*vip����*/
+.fui-ico-vipSale {
+  background-position: 0 -983px;
+  width: 56px;
+}
+/*����*/
+.fui-ico-winport {
+  background-position: 0 -1006px;
+}
+/*�񵽸���*/
+.fui-ico-delayPay {
+  background-position: 0 -1028px;
+}
+/*������*/
+.fui-ico-orderList {
+  background-position: 0 -1049px;
+}
+/*����*/
+.fui-ico-secret {
+  background-position: 0 -1071px;
+}
+/*����*/
+.fui-ico-unsecret {
+  background-position: 0 -1093px;
+}
+/*��Ӧ�̵ȼ�1*/
+.fui-ico-supplyerLevel-1 {
+  background-position: 0 -1115px;
+}
+/*��Ӧ�̵ȼ�2*/
+.fui-ico-supplyerLevel-2 {
+  background-position: 0 -1139px;
+  width: 22px;
+}
+/*��Ӧ�̵ȼ�3*/
+.fui-ico-supplyerLevel-3 {
+  background-position: 0 -1161px;
+}
+/*�ɹ��̵ȼ�1*/
+.fui-ico-buyerLevel-1 {
+  background-position: 0 -1183px;
+}
+/*�ɹ��̵ȼ�2*/
+.fui-ico-buyerLevel-2 {
+  background-position: 0 -1206px;
+  width: 22px;
+}
+/*�ɹ��̵ȼ�3*/
+.fui-ico-buyerLevel-3 {
+  background-position: 0 -1228px;
+}
+/*�ֻ�����*/
+.fui-ico-mobileOrder {
+  background-position: 0 -1248px;
+  width: 48px;
+}
+/*�ֽ׶θ���*/
+.fui-ico-stepPay {
+  background-position: 0 -1272px;
+  width: 56px;
 }
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -2293,7 +2478,14 @@ a.alitalk-off {
 /* ���ƹ�Ӧ�� */
 .fui-ico-goldSupplier {
   background-position: 0 -889px;
-  vertical-align: middle;
+}
+/* ���Ʋɹ��� */
+.fui-ico-goldBuyer {
+  background-position: 0 -916px;
+}
+/* ���Ʋɹ��� */
+.fui-ico-silverBuyer {
+  background-position: 0 -863px;
 }
 /* ֧���� */
 .fui-ico-alipay {

@@ -38,7 +38,6 @@
 .fui-ico-ww-online-s,
 .fui-ico-ww-phone-s,
 .fui-ico-ww-off-s,
-a.alitalk,
 .fui-end {
   background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20120724/alitalk.gif) no-repeat 0 0;
   display: inline-block;
@@ -51,6 +50,11 @@ a.alitalk,
 .fui-ico-payEnsure,
 .fui-ico-pay7,
 .fui-ico-payGuarantee,
+.fui-ico-tmall,
+.fui-ico-taobo,
+.fui-ico-personal,
+.fui-ico-enterprise,
+.fui-ico-rank,
 .fui-ico-goldSupplier,
 .fui-ico-goldBuyer,
 .fui-ico-silverBuyer,
@@ -84,85 +88,15 @@ a.alitalk,
 .fui-ico-buyerLevel-3,
 .fui-ico-mobileOrder,
 .fui-ico-stepPay,
+.fui-ico-tradeLevel,
 .fui-end {
-  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130524/icon.png) no-repeat 0 0;
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130525/icon.png) no-repeat 0 0;
   display: inline-block;
   height: 18px;
   width: 18px;
   line-height: 18px;
   vertical-align: middle;
   overflow: hidden;
-}
-/*�ۿ�*/
-.fui-ico-discount {
-  background-position: 0 -940px;
-  width: 30px;
-}
-/*���Ͽ�*/
-.fui-ico-ensureCard {
-  background-position: 0 -961px;
-  width: 54px;
-}
-/*vip����*/
-.fui-ico-vipSale {
-  background-position: 0 -983px;
-  width: 56px;
-}
-/*����*/
-.fui-ico-winport {
-  background-position: 0 -1006px;
-}
-/*�񵽸���*/
-.fui-ico-delayPay {
-  background-position: 0 -1028px;
-}
-/*������*/
-.fui-ico-orderList {
-  background-position: 0 -1049px;
-}
-/*����*/
-.fui-ico-secret {
-  background-position: 0 -1071px;
-}
-/*����*/
-.fui-ico-unsecret {
-  background-position: 0 -1093px;
-}
-/*��Ӧ�̵ȼ�1*/
-.fui-ico-supplyerLevel-1 {
-  background-position: 0 -1115px;
-}
-/*��Ӧ�̵ȼ�2*/
-.fui-ico-supplyerLevel-2 {
-  background-position: 0 -1139px;
-  width: 22px;
-}
-/*��Ӧ�̵ȼ�3*/
-.fui-ico-supplyerLevel-3 {
-  background-position: 0 -1161px;
-}
-/*�ɹ��̵ȼ�1*/
-.fui-ico-buyerLevel-1 {
-  background-position: 0 -1183px;
-}
-/*�ɹ��̵ȼ�2*/
-.fui-ico-buyerLevel-2 {
-  background-position: 0 -1206px;
-  width: 22px;
-}
-/*�ɹ��̵ȼ�3*/
-.fui-ico-buyerLevel-3 {
-  background-position: 0 -1228px;
-}
-/*�ֻ�����*/
-.fui-ico-mobileOrder {
-  background-position: 0 -1248px;
-  width: 48px;
-}
-/*�ֽ׶θ���*/
-.fui-ico-stepPay {
-  background-position: 0 -1272px;
-  width: 56px;
 }
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -326,28 +260,119 @@ a.alitalk-off {
   height: 16px;
   width: 52px;
 }
+/*�ۿ�*/
+.fui-ico-discount {
+  background-position: 0 -940px;
+  width: 30px;
+}
+/*���Ͽ�*/
+.fui-ico-ensureCard {
+  background-position: 0 -961px;
+  width: 54px;
+}
+/*vip����*/
+.fui-ico-vipSale {
+  background-position: 0 -983px;
+  width: 56px;
+}
+/*����*/
+.fui-ico-winport {
+  background-position: 0 -1006px;
+}
+/*�񵽸���*/
+.fui-ico-delayPay {
+  background-position: 0 -1028px;
+}
+/*������*/
+.fui-ico-orderList {
+  background-position: 0 -1049px;
+}
+/*����*/
+.fui-ico-secret {
+  background-position: 0 -1071px;
+}
+/*����*/
+.fui-ico-unsecret {
+  background-position: 0 -1093px;
+}
+/*��Ӧ�̵ȼ�1*/
+.fui-ico-supplyerLevel-1 {
+  background-position: 0 -1115px;
+}
+/*��Ӧ�̵ȼ�2*/
+.fui-ico-supplyerLevel-2 {
+  background-position: 0 -1139px;
+  width: 22px;
+}
+/*��Ӧ�̵ȼ�3*/
+.fui-ico-supplyerLevel-3 {
+  background-position: 0 -1161px;
+}
+/*�ɹ��̵ȼ�1*/
+.fui-ico-buyerLevel-1 {
+  background-position: 0 -1183px;
+}
+/*�ɹ��̵ȼ�2*/
+.fui-ico-buyerLevel-2 {
+  background-position: 0 -1206px;
+  width: 22px;
+}
+/*�ɹ��̵ȼ�3*/
+.fui-ico-buyerLevel-3 {
+  background-position: 0 -1228px;
+}
+/*�ֻ�����*/
+.fui-ico-mobileOrder {
+  background-position: 0 -1248px;
+  width: 48px;
+}
+/*�ֽ׶θ���*/
+.fui-ico-stepPay {
+  background-position: 0 -1272px;
+  width: 56px;
+}
+/* ��è��ʶ    */
+.fui-ico-tmall {
+  background-position: 0 -710px;
+  width: 23px;
+}
+/* �Ա���ʶ    */
+.fui-ico-taobo {
+  background-position: 0 -735px;
+}
+/* ������֤    */
+.fui-ico-personal {
+  background-position: 0 -759px;
+  width: 24px;
+}
+/* ��ҵ��֤    */
+.fui-ico-enterprise {
+  background-position: 0 -784px;
+  width: 24px;
+}
+/* ���а�    */
+.fui-ico-rank {
+  background-position: 0 -174px;
+}
 /*����ѫ��*/
-.fui-ico-tradeMedal {
+.fui-ico-tradeLevel {
   height: 18px;
   background-position: 0 -681px;
 }
-.fui-ico-tradeMedal:hover {
-  text-decoration: none;
-}
-.fui-ico-tradeMedal-medalLevel1 {
+.fui-ico-tradeLevel.level-1 {
   width: 16px;
 }
-.fui-ico-tradeMedal-medalLevel2 {
-  width: 35px;
+.fui-ico-tradeLevel.level-2 {
+  width: 32px;
 }
-.fui-ico-tradeMedal-medalLevel3 {
-  width: 54px;
+.fui-ico-tradeLevel.level-3 {
+  width: 48px;
 }
-.fui-ico-tradeMedal-medalLevel4 {
-  width: 72px;
+.fui-ico-tradeLevel.level-4 {
+  width: 64px;
 }
-.fui-ico-tradeMedal-medalLevel5 {
-  width: 90px;
+.fui-ico-tradeLevel.level-5 {
+  width: 81px;
 }
 /**
 * @file fui-btn.less
@@ -2343,7 +2368,6 @@ a.fui-btn-notxt {
 .fui-ico-ww-online-s,
 .fui-ico-ww-phone-s,
 .fui-ico-ww-off-s,
-a.alitalk,
 .fui-end {
   background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20120724/alitalk.gif) no-repeat 0 0;
   display: inline-block;
@@ -2356,6 +2380,11 @@ a.alitalk,
 .fui-ico-payEnsure,
 .fui-ico-pay7,
 .fui-ico-payGuarantee,
+.fui-ico-tmall,
+.fui-ico-taobo,
+.fui-ico-personal,
+.fui-ico-enterprise,
+.fui-ico-rank,
 .fui-ico-goldSupplier,
 .fui-ico-goldBuyer,
 .fui-ico-silverBuyer,
@@ -2389,85 +2418,15 @@ a.alitalk,
 .fui-ico-buyerLevel-3,
 .fui-ico-mobileOrder,
 .fui-ico-stepPay,
+.fui-ico-tradeLevel,
 .fui-end {
-  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130524/icon.png) no-repeat 0 0;
+  background: transparent url(http://img.china.alibaba.com/cms/upload/search/common/20130525/icon.png) no-repeat 0 0;
   display: inline-block;
   height: 18px;
   width: 18px;
   line-height: 18px;
   vertical-align: middle;
   overflow: hidden;
-}
-/*�ۿ�*/
-.fui-ico-discount {
-  background-position: 0 -940px;
-  width: 30px;
-}
-/*���Ͽ�*/
-.fui-ico-ensureCard {
-  background-position: 0 -961px;
-  width: 54px;
-}
-/*vip����*/
-.fui-ico-vipSale {
-  background-position: 0 -983px;
-  width: 56px;
-}
-/*����*/
-.fui-ico-winport {
-  background-position: 0 -1006px;
-}
-/*�񵽸���*/
-.fui-ico-delayPay {
-  background-position: 0 -1028px;
-}
-/*������*/
-.fui-ico-orderList {
-  background-position: 0 -1049px;
-}
-/*����*/
-.fui-ico-secret {
-  background-position: 0 -1071px;
-}
-/*����*/
-.fui-ico-unsecret {
-  background-position: 0 -1093px;
-}
-/*��Ӧ�̵ȼ�1*/
-.fui-ico-supplyerLevel-1 {
-  background-position: 0 -1115px;
-}
-/*��Ӧ�̵ȼ�2*/
-.fui-ico-supplyerLevel-2 {
-  background-position: 0 -1139px;
-  width: 22px;
-}
-/*��Ӧ�̵ȼ�3*/
-.fui-ico-supplyerLevel-3 {
-  background-position: 0 -1161px;
-}
-/*�ɹ��̵ȼ�1*/
-.fui-ico-buyerLevel-1 {
-  background-position: 0 -1183px;
-}
-/*�ɹ��̵ȼ�2*/
-.fui-ico-buyerLevel-2 {
-  background-position: 0 -1206px;
-  width: 22px;
-}
-/*�ɹ��̵ȼ�3*/
-.fui-ico-buyerLevel-3 {
-  background-position: 0 -1228px;
-}
-/*�ֻ�����*/
-.fui-ico-mobileOrder {
-  background-position: 0 -1248px;
-  width: 48px;
-}
-/*�ֽ׶θ���*/
-.fui-ico-stepPay {
-  background-position: 0 -1272px;
-  width: 56px;
 }
 .fui-ico-ww-online,
 .fui-ico-ww-phone,
@@ -2631,28 +2590,119 @@ a.alitalk-off {
   height: 16px;
   width: 52px;
 }
+/*�ۿ�*/
+.fui-ico-discount {
+  background-position: 0 -940px;
+  width: 30px;
+}
+/*���Ͽ�*/
+.fui-ico-ensureCard {
+  background-position: 0 -961px;
+  width: 54px;
+}
+/*vip����*/
+.fui-ico-vipSale {
+  background-position: 0 -983px;
+  width: 56px;
+}
+/*����*/
+.fui-ico-winport {
+  background-position: 0 -1006px;
+}
+/*�񵽸���*/
+.fui-ico-delayPay {
+  background-position: 0 -1028px;
+}
+/*������*/
+.fui-ico-orderList {
+  background-position: 0 -1049px;
+}
+/*����*/
+.fui-ico-secret {
+  background-position: 0 -1071px;
+}
+/*����*/
+.fui-ico-unsecret {
+  background-position: 0 -1093px;
+}
+/*��Ӧ�̵ȼ�1*/
+.fui-ico-supplyerLevel-1 {
+  background-position: 0 -1115px;
+}
+/*��Ӧ�̵ȼ�2*/
+.fui-ico-supplyerLevel-2 {
+  background-position: 0 -1139px;
+  width: 22px;
+}
+/*��Ӧ�̵ȼ�3*/
+.fui-ico-supplyerLevel-3 {
+  background-position: 0 -1161px;
+}
+/*�ɹ��̵ȼ�1*/
+.fui-ico-buyerLevel-1 {
+  background-position: 0 -1183px;
+}
+/*�ɹ��̵ȼ�2*/
+.fui-ico-buyerLevel-2 {
+  background-position: 0 -1206px;
+  width: 22px;
+}
+/*�ɹ��̵ȼ�3*/
+.fui-ico-buyerLevel-3 {
+  background-position: 0 -1228px;
+}
+/*�ֻ�����*/
+.fui-ico-mobileOrder {
+  background-position: 0 -1248px;
+  width: 48px;
+}
+/*�ֽ׶θ���*/
+.fui-ico-stepPay {
+  background-position: 0 -1272px;
+  width: 56px;
+}
+/* ��è��ʶ    */
+.fui-ico-tmall {
+  background-position: 0 -710px;
+  width: 23px;
+}
+/* �Ա���ʶ    */
+.fui-ico-taobo {
+  background-position: 0 -735px;
+}
+/* ������֤    */
+.fui-ico-personal {
+  background-position: 0 -759px;
+  width: 24px;
+}
+/* ��ҵ��֤    */
+.fui-ico-enterprise {
+  background-position: 0 -784px;
+  width: 24px;
+}
+/* ���а�    */
+.fui-ico-rank {
+  background-position: 0 -174px;
+}
 /*����ѫ��*/
-.fui-ico-tradeMedal {
+.fui-ico-tradeLevel {
   height: 18px;
   background-position: 0 -681px;
 }
-.fui-ico-tradeMedal:hover {
-  text-decoration: none;
-}
-.fui-ico-tradeMedal-medalLevel1 {
+.fui-ico-tradeLevel.level-1 {
   width: 16px;
 }
-.fui-ico-tradeMedal-medalLevel2 {
-  width: 35px;
+.fui-ico-tradeLevel.level-2 {
+  width: 32px;
 }
-.fui-ico-tradeMedal-medalLevel3 {
-  width: 54px;
+.fui-ico-tradeLevel.level-3 {
+  width: 48px;
 }
-.fui-ico-tradeMedal-medalLevel4 {
-  width: 72px;
+.fui-ico-tradeLevel.level-4 {
+  width: 64px;
 }
-.fui-ico-tradeMedal-medalLevel5 {
-  width: 90px;
+.fui-ico-tradeLevel.level-5 {
+  width: 81px;
 }
 /**
 * @file fui-loading.less

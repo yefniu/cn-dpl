@@ -25,6 +25,7 @@
 /* tip */
 /* title */
 /* table */
+/* sidebar */
 /**
 * @file fui-icon.less
 * @brief
@@ -628,7 +629,7 @@ a.fui-btn-notxt {
 .fui-btn-img .fui-ico-search,
 .fui-btn-action .fui-ico-search,
 .fui-btn-notxt .fui-ico-search {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   background-position: -120px -20px;
   width: 16px;
@@ -721,7 +722,7 @@ a.fui-btn-notxt {
   font-weight: bold;
 }
 .fui-dialog .d-close {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
 }
 .fui-dialog .d-close:link,
 .fui-dialog .d-close:visited {
@@ -747,7 +748,7 @@ a.fui-btn-notxt {
 .fui-dialog .d-detail .fui-ico-success,
 .fui-dialog .d-detail .fui-ico-general,
 .fui-dialog .d-detail .fui-ico-doubt {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   width: 16px;
   height: 18px;
@@ -1018,7 +1019,7 @@ a.fui-btn-notxt {
   display: inline;
 }
 .fui-path .fui-c .fui-arrow {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -1044,7 +1045,7 @@ a.fui-btn-notxt {
   display: inline;
 }
 .fui-path-simple .fui-c .fui-arrow {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -1365,7 +1366,7 @@ a.fui-btn-notxt {
 .fui-tab-bar .fui-tab-t {
   border: none;
   margin-left: -1px;
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   background-position: right -206px;
 }
 .fui-tab-bar .fui-tab-t a:link,
@@ -1416,7 +1417,7 @@ a.fui-btn-notxt {
 * @date 2013-04-22
 */
 .fui-text-calendar {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
 }
 .fui-text {
   border: solid 1px #b7b7b7;
@@ -1471,7 +1472,7 @@ a.fui-btn-notxt {
 }
 .fui-tip .fui-ico-speaker,
 .fui-tip .fui-ico-bubble {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   float: left;
   display: inline;
   background-position: -40px -68px;
@@ -1482,7 +1483,7 @@ a.fui-btn-notxt {
   background-position: -80px -65px;
 }
 .fui-tip .fui-tip-row-close {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   margin-right: -4px;
 }
 .fui-tip .fui-tip-row-close:link,
@@ -1526,7 +1527,7 @@ a.fui-btn-notxt {
 .fui-tip .fui-ico-serious,
 .fui-tip .fui-ico-success,
 .fui-tip .fui-ico-general {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   float: left;
   display: inline;
   width: 12px;
@@ -1562,7 +1563,7 @@ a.fui-btn-notxt {
 .fui-tip-block .fui-ico-success,
 .fui-tip-block .fui-ico-general,
 .fui-tip-block .fui-ico-doubt {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   width: 32px;
   height: 52px;
@@ -1597,7 +1598,7 @@ a.fui-btn-notxt {
   color: #225588;
 }
 .fui-tip-simple .fui-d .fui-ico-bulb {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -1815,7 +1816,7 @@ a.fui-btn-notxt {
   bottom: 6px;
 }
 .fui-tip-simple .fui-tip-row-close {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   margin-right: -4px;
 }
 .fui-tip-simple .fui-tip-row-close:link,
@@ -1854,7 +1855,7 @@ a.fui-btn-notxt {
 .fui-tip-inline .fui-ico-serious,
 .fui-tip-inline .fui-ico-success,
 .fui-tip-inline .fui-ico-general {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   display: inline-block;
   width: 12px;
   height: 18px;
@@ -2065,7 +2066,7 @@ a.fui-btn-notxt {
   height: 7px;
   float: left;
   font-size: 0;
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
 }
 .fui-ajust .fui-operation .fui-up {
   background-position: 0 -581px;
@@ -2172,7 +2173,7 @@ a.fui-btn-notxt {
   background-position: 0 -12px;
 }
 .fui-combobox .trigger {
-  background: url(http://img.china.alibaba.com/cms/upload/2013/841/423/1324148_681975369.png) no-repeat;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
   border: solid 1px #b7b7b7;
   border-left: none;
   display: block;
@@ -2747,4 +2748,103 @@ a.alitalk-off {
 }
 .fui-loading-part .fui-txt {
   padding: 0 0 0 8px;
+}
+.fui-sidebar {
+  position: fixed;
+  _position: absolute;
+  right: .5%;
+  bottom: 50px;
+  z-index: 1000000;
+}
+.fui-sidebar i {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  background: url(http://img.china.alibaba.com/cms/upload/2013/012/243/1342210_523143985.png) no-repeat;
+  margin-top: -9px;
+}
+.fui-sidebar li {
+  position: relative;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translateZ(0);
+}
+.fui-sidebar a {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  right: 0;
+  border: 1px solid #fe8101;
+  background-color: #ffa405;
+  outline: 0;
+}
+.fui-sidebar a:hover {
+  text-decoration: none;
+}
+.fui-sidebar .fui-feedback a,
+.fui-sidebar .fui-investigate a,
+.fui-sidebar .fui-help a {
+  background-color: #fff;
+  border-color: #bbb;
+  -webkit-transition: border-color 0.5s ease-out, background-color 0.5s ease-out;
+  -moz-transition: border-color 0.5s ease-out, background-color 0.5s ease-out;
+  -o-transition: border-color 0.5s ease-out, background-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out, background-color 0.5s ease-out;
+}
+.fui-sidebar .fui-hover {
+  z-index: 999;
+}
+.fui-sidebar .fui-feedback.fui-hover a,
+.fui-sidebar .fui-investigate.fui-hover a,
+.fui-sidebar .fui-help.fui-hover a {
+  border: 1px solid #fe8101;
+  background-color: #ffa405;
+  width: 96px;
+}
+.fui-sidebar .fui-feedback i {
+  background-position: -25px -621px;
+}
+.fui-sidebar .fui-investigate i {
+  background-position: 0px -621px;
+}
+.fui-sidebar .fui-help i {
+  background-position: -76px -621px;
+  width: 15px;
+  right: 8px;
+}
+.fui-sidebar .fui-gotop i {
+  background-position: -51px -598px;
+}
+.fui-sidebar .fui-feedback.fui-hover i {
+  background-position: -25px -597px;
+}
+.fui-sidebar .fui-investigate.fui-hover i {
+  background-position: 0px -597px;
+}
+.fui-sidebar .fui-help.fui-hover i {
+  background-position: -76px -597px;
+}
+.fui-sidebar .fui-bg {
+  position: absolute;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  right: 17px;
+  width: 87px;
+  text-align: center;
+}
+.fui-sidebar .fui-gotop {
+  display: none;
+  margin-bottom: 8px;
+}
+.fui-sidebar .fui-show {
+  display: block;
 }

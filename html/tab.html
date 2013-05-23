@@ -59,6 +59,24 @@
 			</div> 
 		</div>
 
+		<script type="text/javascript" src="http://style.china.alibaba.com/fdevlib/js/fdev-v4/core/fdev-min.js"></script>
+        <script type="text/javascript">        	
+			(function($, D){
+				$(D).ready(function(){
+					// tab
+					$.use('ui-tabs', function(){
+				        $('div.fui-tab').tabs({
+				        	currentClass: 'fui-tab-current',
+				        	titleSelector: '.fui-tab-t',
+				        	boxSelector: '.fui-tab-b',
+				        	event: 'click'
+				        });
+				    });
+					
+				});
+			})(jQuery, document);			
+        </script>
+
     </body>
 </html>
 
